@@ -22,6 +22,10 @@
     justify-content: flex-end;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .center{
     align-content: center;
     align-items: center;
