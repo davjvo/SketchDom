@@ -37,18 +37,6 @@
     flex-direction: row-reverse;
 }
 
-.column {
-    flex-direction: column;
-}
-
-.justify_right {
-    justify-content: right;
-}
-
-.justify_between {
-    justify-content: space-between;
-}
-
 .justify_around{
     justify-content: space-around;
 }
@@ -65,10 +53,6 @@
 
 .full_width{
     width: 100%;
-}
-
-.index_1{
-    z-index: 1;
 }
 
 .no_margin{
