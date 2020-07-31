@@ -2,10 +2,16 @@
 <html lang="es">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Página oficial del evento Sketchdom.">
-    <link rel="preload" href="css/fonts.css">
+    <link rel="preload" as="font" href="/assets/fonts/amsi/amsipro.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/amsi/amsipro.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/brandon/brandontextbold.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/brandon/brandontextbold-webfont.woff" type="font/woff2"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Sketchdom</title>
@@ -19,11 +25,11 @@
         </a>
         <div class="flex center justify_end wrap">
             <ul class="nav_ul flex row center font_brandon">
-                <li class="nav_li li_right_border"><a href="">TICKETS</a></li>
-                <li class="nav_li li_right_border"><a href="">ARTISTAS INVITADOS</a></li>
-                <li class="nav_li li_right_border"><a href="">PROGRAMA</a></li>
-                <li class="nav_li li_right_border"><a href="">ARTIST ALLEY</a></li>
-                <li class="nav_li"><a href="">CONCURSOS</a></li>
+                <li class="nav_li li_right_border"><a href="tickets.html">TICKETS</a></li>
+                <li class="nav_li li_right_border"><a href="invitados.html">ARTISTAS INVITADOS</a></li>
+                <li class="nav_li li_right_border"><a href="programa.html">PROGRAMA</a></li>
+                <li class="nav_li li_right_border"><a href="alley.html">ARTIST ALLEY</a></li>
+                <li class="nav_li"><a href="concursos.html">CONCURSOS</a></li>
             </ul>
         </div>
     </nav>
@@ -31,9 +37,15 @@
         <img src="assets/images/indice_banner-min.png" width="100%" />
         <p class="banner_welcome font_amsi">BIENVENIDOS A:</p>
         <div class="banner_redes_sociales flex row">
-            <object data="assets/images/social_instagram.svg" type="image/svg+xml"></object>
-            <object data="assets/images/social_facebook.svg" type="image/svg+xml"></object>
-            <object data="assets/images/social_youtube.svg" type="image/svg+xml"></object>
+            <a href="https://www.instagram.com/sketchdomrd/" target="_blank">
+                <img src="assets/images/social_instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.youtube.com/channel/UC_5ZvYQxisBOTxysviAawVg" target="_blank">
+                <img src="assets/images/social_facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.facebook.com/sketchdomrd/" target="_blank">
+                <img src="assets/images/social_youtube.png" alt="Youtube" />
+            </a>
         </div>
     </div>
     <div class="banner_container flex column center">
@@ -69,7 +81,7 @@
         </p>
         <span class="black_marker"></span>
     </div>
-    <div class="flex row center justify_around patrocinadores">
+    <div class="flex row center wrap justify_around patrocinadores">
         <img src="assets/images/logos/logo_brother-min.png" alt="Brother" class="logo_brother patrocinadores_logo " />
         <img src="assets/images/logos/logo_boca-min.png" alt="Boca" class="patrocinadores_logo" />
         <img src="assets/images/logos/logo_alpha-min.png" alt="Alpha" class="patrocinadores_logo" />
@@ -78,6 +90,8 @@
         <img src="assets/images/logos/logo_anime_island-min.png" alt="Anime Island" class="patrocinadores_logo" />
         <img src="assets/images/logos/logo_cultura_comid-min.png" alt="Cultura Comic" class="patrocinadores_logo" />
         <img src="assets/images/logos/logo_yoyo-min.png" alt="Yo Yo Colectivo Creativo" class="patrocinadores_logo" />
+        <img src="assets/images/logos/logo_pardo-min.png" alt="Pardo" class="" />
+        <img src="assets/images/logos/logo_csp.png" alt="Clip Studio Paint" class="" />
     </div>
 </body>
 <footer class="flex justify_around font_brandon">

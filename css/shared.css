@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'amsipro';
+    src: url('../assets/fonts/amsi/amsipro.woff') format('woff'),
+        url('../assets/fonts/amsi/amsipro.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_textbold';
+    src: url('../assets/fonts/brandon/brandontextbold.woff2') format('woff2'),
+         url('../assets/fonts/brandon/brandontextbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+.font_amsi{
+    font-family: 'amsipro';
+}
+
+.font_brandon{
+    font-family: 'brandon_textbold';
+}
+
 .flex {
     display: flex;
 }
