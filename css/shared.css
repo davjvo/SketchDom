@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'brandon_textbold';
     src: url('../assets/fonts/brandon/brandontextbold.woff2') format('woff2'),
-         url('../assets/fonts/brandon/brandontextbold-webfont.woff') format('woff');
+         url('../assets/fonts/brandon/brandontextbold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap
