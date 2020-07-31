@@ -137,10 +137,3 @@ footer{
 .banner_redes_sociales > object{
     width: 2rem;
 }
-
-.banner {
-    background-image: url(../assets/images/indice_banner-min.png);
-    height: 130vh;
-    background-color: transparent;
-    background-size: cover;
-}
