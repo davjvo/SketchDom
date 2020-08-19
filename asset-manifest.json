@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5028a408.chunk.css",
+    "main.js": "/static/js/main.347f4ab7.chunk.js",
+    "main.js.map": "/static/js/main.347f4ab7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e8b920fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e8b920fb.js.map",
+    "static/js/2.ba7e178e.chunk.js": "/static/js/2.ba7e178e.chunk.js",
+    "static/js/2.ba7e178e.chunk.js.map": "/static/js/2.ba7e178e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6d44aaf54f746015d6467373d5b07e96.js": "/precache-manifest.6d44aaf54f746015d6467373d5b07e96.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5028a408.chunk.css.map": "/static/css/main.5028a408.chunk.css.map",
+    "static/js/2.ba7e178e.chunk.js.LICENSE.txt": "/static/js/2.ba7e178e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/brandontextbold.53f27b74.woff",
+    "static/media/indice_acreditacion1.png": "/static/media/indice_acreditacion1.115ac263.png",
+    "static/media/indice_acreditacion2.svg": "/static/media/indice_acreditacion2.d50f2632.svg",
+    "static/media/indice_banner.png": "/static/media/indice_banner.77c93270.png",
+    "static/media/logo_anime_island.png": "/static/media/logo_anime_island.78b50914.png",
+    "static/media/logo_sketchdom.png": "/static/media/logo_sketchdom.ca65963f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8b920fb.js",
+    "static/js/2.ba7e178e.chunk.js",
+    "static/css/main.5028a408.chunk.css",
+    "static/js/main.347f4ab7.chunk.js"
+  ]
+}
