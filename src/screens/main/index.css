@@ -1,8 +1,4 @@
-.white_marker{
-    width: 50%;
-    height: 1.5vh;
-    background-color: rgb(255, 255, 255);
-}
+
 
 .red_marker{
     width: 10%;
@@ -101,10 +97,3 @@
     width: 16rem;
     padding: 2vw 2vw;
 }
-
-
-
-
-
-
-

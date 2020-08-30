@@ -22,17 +22,17 @@ const Concursos = () => {
                     <p className='font_brandon diversity_containter'>Este año trata sobre la diversidad.</p>
                     <div className='flex center font_brandon fake_button_container'>
                         <div className='button_fake_black'>
-                            me apunto!
+                            <a href='mailto:davjvo@gmail.com'>me apunto!</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='flex row royal_rumble_container background_red'>
-                <img src={postick_amarillo} alt='post stick amarillo' />
+                <img src={postick_amarillo} alt='post stick amarillo ' />
                 <div className='flex column'>
                     <p className='font_amsi royal_rumble_container_title no_padding no_margin'>Sketchdom</p>
                     <p className='font_amsi royal_rumble_container_title no_padding no_margin'>Royal Rumble</p>
-                    <div></div>
+                    <div className='white_marker'></div>
                     <p className='font_brandon'>Este año tendremos dos acreditaciones</p>
                     <p className='font_brandon'>o entradas: acreditación festival y</p>
                     <p className='font_brandon'>acreditación boss. A través de estos</p>

@@ -5,7 +5,7 @@ import {
     Route,
 } from 'react-router-dom';
 import { createBrowserHistory } from "history";
-import { Main, Acreditaciones, Concursos } from './screens';
+import { Main, Acreditaciones, Concursos, Alley, Program, Invited } from './screens';
 import Head from './components/head';
 import './App.css';
 
@@ -16,12 +16,12 @@ function App() {
         <Router history={history}>
             <Head />
             <Switch>
-                <Route path='/concursos' component={Concursos}>
-                </Route>
-                <Route path='/acreditaciones' component={Acreditaciones}>
-                </Route>
-                <Route path='/' component={Main}>
-                </Route>
+                <Route path='/invitados' component={Invited} />
+                <Route path='/programa' component={Program} />
+                <Route path='/alley' component={Alley} />
+                <Route path='/concursos' component={Concursos} />
+                <Route path='/acreditaciones' component={Acreditaciones} />
+                <Route path='/' component={Main} />
             </Switch>
         </Router>
     );

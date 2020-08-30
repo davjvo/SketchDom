@@ -160,3 +160,9 @@ li{
 .no_margin{
     margin: 0;
 }
+
+.white_marker{
+    width: 50%;
+    height: 1.5vh;
+    background-color: rgb(255, 255, 255);
+}

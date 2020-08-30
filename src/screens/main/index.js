@@ -15,6 +15,8 @@ import cultura_comic from '../../assets/images/logos/logo_cultura_comic.png';
 import yoyo from '../../assets/images/logos/logo_yoyo.png';
 import pardo from '../../assets/images/logos/logo_pardo.png';
 import berenice from '../../assets/images/logos/logo_papelería_berenice.png';
+import baltri from '../../assets/images/logos/logo_baltri.png';
+import viart from '../../assets/images/logos/logo_viart.png';
 import './index.css';
 import { Link } from 'react-router-dom';
 
@@ -60,6 +62,8 @@ const Main = () => {
                 <img src={yoyo} alt='Yo Yo Colectivo Creativo' className='patrocinadores_logo' />
                 <img src={pardo} alt='Pardo' className='patrocinadores_logo' />
                 <img src={berenice} alt='Papeleria berenice' className='patrocinadores_logo_2' />
+                <img src={baltri} alt='Baltri' className='patrocinadores_logo' />
+                <img src={viart} alt='Viart' className='patrocinadores_logo' />
             </div>
             <Footer />
         </>
