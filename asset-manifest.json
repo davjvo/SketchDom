@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ddfbba1.chunk.css",
-    "main.js": "/static/js/main.a99d06d9.chunk.js",
-    "main.js.map": "/static/js/main.a99d06d9.chunk.js.map",
+    "main.css": "/static/css/main.43c3966b.chunk.css",
+    "main.js": "/static/js/main.54bfd6cd.chunk.js",
+    "main.js.map": "/static/js/main.54bfd6cd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b607d3d2.js",
     "runtime-main.js.map": "/static/js/runtime-main.b607d3d2.js.map",
-    "static/js/2.936e40bf.chunk.js": "/static/js/2.936e40bf.chunk.js",
-    "static/js/2.936e40bf.chunk.js.map": "/static/js/2.936e40bf.chunk.js.map",
+    "static/js/2.2a33bd50.chunk.js": "/static/js/2.2a33bd50.chunk.js",
+    "static/js/2.2a33bd50.chunk.js.map": "/static/js/2.2a33bd50.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cbae90a79e84867899327399ccc6b72d.js": "/precache-manifest.cbae90a79e84867899327399ccc6b72d.js",
+    "precache-manifest.002aced8fb103d74aa8526eb4addb34f.js": "/precache-manifest.002aced8fb103d74aa8526eb4addb34f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5ddfbba1.chunk.css.map": "/static/css/main.5ddfbba1.chunk.css.map",
-    "static/js/2.936e40bf.chunk.js.LICENSE.txt": "/static/js/2.936e40bf.chunk.js.LICENSE.txt",
+    "static/css/main.43c3966b.chunk.css.map": "/static/css/main.43c3966b.chunk.css.map",
+    "static/js/2.2a33bd50.chunk.js.LICENSE.txt": "/static/js/2.2a33bd50.chunk.js.LICENSE.txt",
     "static/media/acreditacion_banner.png": "/static/media/acreditacion_banner.c4dd33a6.png",
     "static/media/App.css": "/static/media/brandontextbold.53f27b74.woff",
+    "static/media/angry_balls.png": "/static/media/angry_balls.2e9729d0.png",
+    "static/media/concurso.png": "/static/media/concurso.a42fbc7c.png",
     "static/media/indice_acreditacion1.png": "/static/media/indice_acreditacion1.115ac263.png",
     "static/media/indice_acreditacion2.svg": "/static/media/indice_acreditacion2.d50f2632.svg",
     "static/media/indice_banner.png": "/static/media/indice_banner.77c93270.png",
     "static/media/logo_anime_island.png": "/static/media/logo_anime_island.78b50914.png",
+    "static/media/logo_papelería_berenice.png": "/static/media/logo_papelería_berenice.56141518.png",
     "static/media/logo_sketchdom.png": "/static/media/logo_sketchdom.ca65963f.png",
-    "static/media/post_stick.png": "/static/media/post_stick.aa7aeb83.png"
+    "static/media/post_stick.png": "/static/media/post_stick.aa7aeb83.png",
+    "static/media/textura.png": "/static/media/textura.3ab19313.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b607d3d2.js",
-    "static/js/2.936e40bf.chunk.js",
-    "static/css/main.5ddfbba1.chunk.css",
-    "static/js/main.a99d06d9.chunk.js"
+    "static/js/2.2a33bd50.chunk.js",
+    "static/css/main.43c3966b.chunk.css",
+    "static/js/main.54bfd6cd.chunk.js"
   ]
 }
