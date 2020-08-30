@@ -1,0 +1,11 @@
+footer{
+    font-size: 5vh;
+}
+
+footer > * {
+    padding: 1vh;
+}
+
+footer > a > img{
+    height: 3vh;
+}

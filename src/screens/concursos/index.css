@@ -1,0 +1,56 @@
+.gallery_container{
+    margin-top: -50vh;
+}
+
+.gallery_title{
+    font-size: 10vh !important;
+}
+
+.gallery_black_marker{
+    width: 25%;
+    height: 1.5vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.img_container{
+    padding: 3vw;
+    margin-top: -15vh;
+}
+
+.img_container > img{
+    width: 15vw;
+}
+
+.text_container > p{
+    padding: 0;
+    margin: 0;
+    padding-top: 2vh;
+    font-size: 5vh;
+}
+
+.text_container{
+    padding-right: 35vw;
+}
+
+.button_fake_black {
+    font-size: 2vw;
+    border: black solid;
+    padding: .75rem 6rem;
+    text-align: center;
+}
+
+.diversity_containter{
+    padding: 5vh 0 !important;
+}
+
+.fake_button_container{
+    padding: 5vh 0;
+}
+.royal_rumble_container{
+    padding: 2vw 10vw;
+    color: white;
+}
+
+.royal_rumble_container_title{
+    font-size: 9vh;
+}
