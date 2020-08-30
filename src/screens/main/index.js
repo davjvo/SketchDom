@@ -31,7 +31,7 @@ const Main = () => {
                     vertientes. Que con el pasar de los años, se ha convertido en una comunidad.</p>
                 <span className='red_marker'></span>
             </div>
-            <div className='acreditacion_container relative flex row center'>
+            <div className='acreditacion_container relative flex row center text_white'>
                 <img src={acreditacion_1} alt='' className='acreditacion_imagen_1' />
                 <div className='flex column acreditacion_text relative center'>
                     <div className='acreditacion_header font_amsi flex column'>
@@ -42,7 +42,7 @@ const Main = () => {
                         <p>Este año tendremos dos acreditaciones o entradas: acreditación festival y acreditación boss. A
                             través de estos podrás disfrutar el evento.</p>
                     </div>
-                    <Link className='acreditacion_button button_fake font_amsi' to="/acreditaciones">más info</Link>
+                    <Link className='acreditacion_button button_fake font_amsi text_white' to="/acreditaciones">más info</Link>
                 </div>
                 <img src={acreditacion_2} alt='' className='acreditacion_imagen_2' />
             </div>

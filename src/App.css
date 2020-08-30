@@ -18,7 +18,6 @@
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 body{
@@ -79,7 +78,6 @@ body{
     font-size: 2vw;
     border: white solid;
     padding: .75rem 6rem;
-    color: white;
     text-align: center;
 }
 
@@ -112,9 +110,7 @@ body{
 .nav_li a{
     display: block;
     text-align: center;
-    text-decoration: none;
     padding: 0.875rem 1rem;
-    color: black;
 }
 
 li{
@@ -135,10 +131,6 @@ li{
 
 .background_red{
     background-color: rgb(190,31,46);
-}
-
-.text_white{
-    color: white;
 }
 
 .no_padding{
@@ -164,5 +156,13 @@ li{
 .white_marker{
     width: 50%;
     height: 1.5vh;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+}
+
+.text_black{
+    color: black;
+}
+
+.text_white{
+    color: white;
 }

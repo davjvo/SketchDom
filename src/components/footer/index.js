@@ -3,12 +3,12 @@ import './index.css';
 
 const Footer = () => {
     return (
-        <footer className="flex justify_around font_brandon footer_full">
+        <footer className="flex justify_around font_brandon footer_full text_white">
             <div className="flex column contactos">
                 <p className="font_amsi">Contactos</p>
                 <span className="white_marker"></span>
                 <div className="contactos_body">
-                    <p className="no_margin">E-mail: contactosketchdom@gmail.com</p>
+                    <p className="no_margin">E-mail: <a href='mailto:contactosketchdom@gmail.com' className='text_white'>contactosketchdom@gmail.com</a></p>
                     <div className="flex row">
                         <p className="no_margin">Cel:</p>
                         <div className="flex column">

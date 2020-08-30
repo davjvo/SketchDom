@@ -8,6 +8,9 @@ import logo_banner from '../../assets/images/acreditacion_banner.png';
 
 import './index.css';
 
+const LinkEvent = <a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel="noopener noreferrer" className='text_black'>Pagar</a>;
+const PaymentBlack = <div className='button_payment post_stick_payment absolute'>{LinkEvent}</div>;
+
 const Acreditaciones = () => {
     return (
         <div className='background_black'>
@@ -29,7 +32,7 @@ const Acreditaciones = () => {
                             <p className='font_brandon'>Para todos esos ilustradores entusiastas, profesionales o el público en general que disfruta del arte y de aprender cosas nuevas.</p>
                         </div>
                     </div>
-                    <div className='button_payment post_stick_payment absolute'><a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel="noopener noreferrer">Pagar</a></div>
+                    {PaymentBlack}
                 </div>
                 <div className='relative white font_amsi'>
                     <img src={PostStick} alt='post_stick' className='post_stick' />
@@ -41,7 +44,7 @@ const Acreditaciones = () => {
                             <p className='font_brandon'>Para ilustradores profesionales o ilustradores independientes que quieren tener acceso a workshops, video conferencia con charlistas internacionales, networking y más.</p>
                         </div>
                     </div>
-                    <div className='button_payment post_stick_payment absolute'><a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel="noopener noreferrer">Pagar</a></div>
+                    {PaymentBlack}
                 </div>
             </div>
             <div className='container font_brandon background_white'>
@@ -70,7 +73,7 @@ const Acreditaciones = () => {
                 <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faTimes} color='white' /></div>
                 <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
 
-                <div className='cell border_bottom_red'>Workshops pre-grabados</div>
+                <div className='cell border_bottom_red'>Workshops</div>
                 <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faTimes} color='white' /></div>
                 <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
 
@@ -99,8 +102,8 @@ const Acreditaciones = () => {
                 <div className='cell cell_offset background_black text_white border_right_White'>$5 USD</div>
                 <div className='cell text_white background_black'>$10 USD</div>
 
-                <div className='cell padding_low cell_offset'><div className='button_payment margin_right_low'><a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel="noopener noreferrer">Pagar</a> </div></div>
-                <div className='cell padding_low'><div className='button_payment margin_left_low'><a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel="noopener noreferrer">Pagar</a> </div></div>
+                <div className='cell padding_low cell_offset'><div className='button_payment margin_right_low'>{LinkEvent}</div></div>
+                <div className='cell padding_low'><div className='button_payment margin_left_low'> {LinkEvent}</div></div>
             </div>
             <Footer />
         </div>
