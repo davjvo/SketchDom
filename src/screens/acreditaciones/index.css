@@ -126,12 +126,6 @@
     margin: .5vh;
 }
 
-.black_marker{
-    width: 25%;
-    height: .5vh;
-    background-color: black;
-}
-
 .virtual_alley_text{
     line-height: 3rem;
 }

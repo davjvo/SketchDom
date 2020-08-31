@@ -36,7 +36,7 @@ const Concursos = () => {
                 </div>
                 <div className='flex column text_container'>
                     <p className='font_amsi gallery_title'>Galería Sketch</p>
-                    <div className='gallery_black_marker'></div>
+                    <div className='black_marker'></div>
                     <p className='font_brandon'>Consiste en la participación de jóvenes artistas dominicanos exponiendo sus obras.</p>
                     <p className='font_brandon diversity_containter'>Este año trata sobre la diversidad.</p>
                     <div className='flex center font_brandon fake_button_container'>

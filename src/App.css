@@ -154,9 +154,20 @@ li{
 }
 
 .white_marker{
-    width: 50%;
+    width: 25%;
     height: 1.5vh;
     background-color: white;
+}
+.red_marker{
+    width: 10%;
+    height: 1.5vh;
+    background-color: rgb(189, 75, 74);
+}
+
+.black_marker{
+    width: 25%;
+    height: 1.5vh;
+    background-color: rgb(0, 0, 0);
 }
 
 .text_black{
