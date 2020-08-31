@@ -21,13 +21,13 @@
 }
 
 .banner_container{
-    padding: 1em 13.75em 13.75em 13.75em;
+    text-align: center;
+    padding: 0vh 3.75vw 33vh 8vw;
+    margin-top: -10vh;
 }
 
-.banner_text {
-    font-size: 3vw;
-    text-align: center;
-    font-weight: bold;
+.banner_container > p{
+    font-size: 4vw;
 }
 
 .acreditacion_container{
@@ -83,7 +83,7 @@
 }
 
 .patrocinadores_text {
-    font-size: 2vw;
+    font-size: 4vw;
     padding-top: 3vw;
 }
 

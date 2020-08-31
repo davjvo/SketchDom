@@ -1,5 +1,6 @@
 .gallery_container{
     margin-top: -50vh;
+    padding: 3vw 0;
 }
 
 .gallery_title{
@@ -47,7 +48,7 @@
     padding: 5vh 0;
 }
 .royal_rumble_container{
-    padding: 2vw 10vw;
+    padding: 6vw 10vw;
 }
 
 .royal_rumble_container_title{
@@ -65,4 +66,75 @@
 
 iframe{
     padding: 2vw;
+}
+
+.notepad{
+    top: 5vw;
+    left: -5vw;
+    width: 75vw;
+}
+
+.sketch_favorito_container_text{
+    top: 15vw;
+    left: 15vw;
+    width: 35vw;
+}
+
+.sketch_favorito_container_title{
+    font-size: 5vw;
+}
+
+.sketch_favorito_container_body{
+    font-size: 2vw;
+}
+
+.ediciones_anteriores_container{
+    padding: 3vw 0;
+    overflow: hidden;
+    margin-top: -1vh;
+}
+
+.ediciones_anteriores_container  > img{
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.index-1{
+    z-index: 1;
+}
+
+.cinta_concursos{
+    top: 5vw;
+    left: 25vw;
+    transform: rotate(35deg);
+}
+
+.banner_acreditaciones{
+    height: 140vh;
+}
+
+.banner_acreditaciones_papel{
+    height: 85vh;
+    overflow: hidden;
+}
+
+.yonson{
+    top: 0;
+    right: 0;
+}
+
+.sticker_girl{
+    bottom: -17vh;
+    right: 0;
+}
+
+.img_banner{
+    width: 35vw;
+}
+
+.banner_sticker_text{
+    top: 10vh;
+    left: 10vw;
+    font-size: 8vw;
 }

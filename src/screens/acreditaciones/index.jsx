@@ -6,48 +6,28 @@ import PostStick from '../../assets/images/post_stick.png';
 import cinta from '../../assets/images/cinta.png';
 import background from '../../assets/images/background.png';
 import textura from '../../assets/images/textura.png';
-import yellow_sticker from '../../assets/images/test_3.png';
-import instagram from '../../assets/images/social_instagram.png';
-import facebook from '../../assets/images/social_facebook.png';
-import youtube from '../../assets/images/social_youtube.png';
-
+import yellow_sticker from '../../assets/images/acreditacion_sticker.png';
+import RedesSociales from '../../components/redes_sociales';
 import './index.css';
 
-const LinkEvent = <a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel="noopener noreferrer" className='text_black'>Pagar</a>;
+const LinkEvent = <a href='https://www.eventbrite.es/e/entradas-sketchdom-118793728239' target='_blank' rel='noopener noreferrer' className='text_black'>Pagar</a>;
 const PaymentBlack = <div className='button_payment post_stick_payment absolute'>{LinkEvent}</div>;
 
-// <Banner logo={logo_banner}>
-//     <div className='container_acreditaciones no_padding font_amsi'>
-//         <p>ACRE</p>
-//         <p>DITA</p>
-//         <p>CIONES</p>
-//     </div>
-// </Banner>
 const Acreditaciones = () => {
     return (
         <div className='background_black'>
-            <div class='banner_acreditacion relative'>
-                <img src={background} className='background absolute' />
-                <img src={textura} className='textura absolute' />
-                <img src={cinta} className='bottom_right cinta absolute' />
-                <img src={cinta} className='top_left cinta absolute' />
-                <img src={yellow_sticker} className='sticker absolute' />
-                <div className='banner_text container_acreditaciones no_padding font_amsi no_margin'>
+            <div className='banner_acreditacion relative'>
+                <img src={background} alt='background' className='background absolute' />
+                <img src={textura} alt='textura' className='textura absolute' />
+                <img src={cinta} alt='cinta' className='bottom_right cinta absolute' />
+                <img src={cinta} alt='cinta' className='top_left cinta absolute' />
+                <img src={yellow_sticker} alt='yellow_sticker' className='sticker absolute' />
+                <div className='container_acreditaciones font_amsi no_padding no_margin'>
                     <p>ACRE</p>
                     <p>DITA</p>
                     <p>CIONES</p>
                 </div>
-                <div className='banner_redes_sociales flex row'>
-                    <a href='https://www.instagram.com/sketchdomrd/' target='_blank' rel="noopener noreferrer">
-                        <img src={instagram} alt='Instagram' />
-                    </a>
-                    <a href='https://www.facebook.com/sketchdomrd/' target='_blank' rel="noopener noreferrer">
-                        <img src={facebook} alt='Facebook' />
-                    </a>
-                    <a href='https://www.youtube.com/channel/UC_5ZvYQxisBOTxysviAawVg' target='_blank' rel="noopener noreferrer">
-                        <img src={youtube} alt='Youtube' />
-                    </a>
-                </div>
+                <RedesSociales />
             </div>
             <div className='flex space_around center background_black postick_container'>
                 <div className='relative white font_amsi'>

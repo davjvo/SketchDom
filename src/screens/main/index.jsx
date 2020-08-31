@@ -1,5 +1,6 @@
 import React from 'react';
-import Banner from '../../components/banner';
+import { Link } from 'react-router-dom';
+import RedesSociales from '../../components/redes_sociales';
 import Footer from '../../components/footer';
 import bienvenidos from '../../assets/images/indice_banner.png';
 import acreditacion_1 from '../../assets/images/indice_acreditacion1.png';
@@ -18,16 +19,17 @@ import berenice from '../../assets/images/logos/logo_papelería_berenice.png';
 import baltri from '../../assets/images/logos/logo_baltri.png';
 import viart from '../../assets/images/logos/logo_viart.png';
 import './index.css';
-import { Link } from 'react-router-dom';
 
 const Main = () => {
     return (
         <>
-            <Banner logo={bienvenidos}>
+            <div className='relative white'>
+                <img src={bienvenidos} alt='Alpha' width='100%' />
                 <p className='banner_welcome font_amsi'>BIENVENIDOS A:</p>
-            </Banner>
+                <RedesSociales />
+            </div>
             <div className='banner_container flex column center'>
-                <p className='banner_text full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
+                <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
                     vertientes. Que con el pasar de los años, se ha convertido en una comunidad.</p>
                 <span className='red_marker'></span>
             </div>
@@ -42,7 +44,7 @@ const Main = () => {
                         <p>Este año tendremos dos acreditaciones o entradas: acreditación festival y acreditación boss. A
                             través de estos podrás disfrutar el evento.</p>
                     </div>
-                    <Link className='acreditacion_button button_fake font_amsi text_white' to="/acreditaciones">más info</Link>
+                    <Link className='acreditacion_button button_fake font_amsi text_white' to='/acreditaciones'>más info</Link>
                 </div>
                 <img src={acreditacion_2} alt='' className='acreditacion_imagen_2' />
             </div>
