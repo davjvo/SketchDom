@@ -3,6 +3,7 @@
     top: 25vh;
     font-size: 15vh;
     left: 15vh;
+    text-align: start;
 }
 
 .container_acreditaciones > p{
@@ -136,4 +137,39 @@
 
 .post_stick_payment:hover{
     cursor: pointer;
+}
+
+.banner_acreditacion{
+    height: 130vh;
+}
+
+.top_left{
+    top: 0;
+    left: 0;
+}
+
+.bottom_right{
+    bottom: 0;
+    right: 2vw;
+}
+
+.background{
+    right: -1vw;
+    width: 100vw;
+}
+
+.textura{
+    top: 13vw;
+    right: 7vw;
+    width: 17vw;
+}
+
+.sticker{
+    top: 7vw;
+    right: 15vw;
+    width: 45vw;
+}
+
+.cinta{
+    width: 15vw;
 }

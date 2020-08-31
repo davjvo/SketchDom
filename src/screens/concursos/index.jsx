@@ -1,6 +1,7 @@
 import React from 'react';
-import banner_concursos from '../../assets/images/concurso.png';
 import Banner from '../../components/banner';
+import Footer from '../../components/footer_simple';
+import banner_concursos from '../../assets/images/concurso.png';
 import angry_balls from '../../assets/images/angry_balls.png';
 import textura from '../../assets/images/textura.png';
 import postick_amarillo from '../../assets/images/indice_postick_amarillo.png';
@@ -45,11 +46,26 @@ const Concursos = () => {
                     <div className='flex center font_brandon fake_button_container'>
                         <div className='button_fake'>
                             <MailTo textColor='text_white' />
-
                         </div>
                     </div>
                 </div>
             </div>
+            <div className='flex column sketch_favorito_container'>
+
+            </div>
+            <div className='flex column center ediciones_anteriores_container background_black'>
+                <p className='youtube_title font_amsi'>Ediciones Anteriores</p>
+                <div className='flex row links_container'>
+                    <iframe width="560" height="315" title='Vlog' src="https://www.youtube.com/embed/pI0ld_-P5d0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" title='Royal Rumble' src="https://www.youtube.com/embed/UuzZ58Pe6B0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p className='text_white youtube_title font_amsi'>links de youtube</p>
+                <div className='flex row links_container justify_around'>
+                    <iframe width="560" height="315" title='Llegada evento' src="https://www.youtube.com/embed/xGcXDKBAYLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" title='Video fotográfico' src="https://www.youtube.com/embed/eCK7Ih97Lis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <Footer />
         </>
     );
 }
