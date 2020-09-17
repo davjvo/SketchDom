@@ -1,0 +1,78 @@
+
+    .footer_full {
+        background-color: rgb(26, 25, 21);
+        padding: 0 11vw;
+    }
+
+    .footer_full {
+        flex-direction: column;
+    }
+
+    .contactos > p {
+        margin-bottom: 0;
+        font-size: 12vw;
+    }
+
+    .contactos_body, .newsletter_body {
+        font-size: 5.5vw;
+        padding-top: 2vh;
+    }
+
+    .newsletter {
+        padding-top: 4vh;
+    }
+
+    .newsletter > p {
+        font-size: 6vw;
+    }
+
+    .newsletter_body > .button_fake {
+        padding: 3vh 3vw ;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .footer_full {
+        flex-direction: row;
+    }
+    
+    .contactos > p{
+        margin-bottom: 0;
+        font-size: 2.85vw;
+    }
+
+    .contactos_body, .newsletter_body{
+        font-size: 1.7vw;
+        padding-top: 2em;
+    }
+
+    .newsletter > p{
+        font-size: 3.5vw;
+    }
+
+    .newsletter_body > .button_fake{
+        margin-top: 2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+} 

@@ -1,0 +1,22 @@
+footer{
+    font-size: 5vh;
+}
+
+.footer_simple > * {
+    padding-top: 2vh;
+    padding-right: 1vh;
+}
+
+.footer_simple > a > img{
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    width: auto;
+    height: auto;
+}
+
+footer > a > img{
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    width: auto;
+    height: auto;
+}

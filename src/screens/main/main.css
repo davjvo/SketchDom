@@ -1,0 +1,174 @@
+.banner_welcome {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    font-size: 5vw;
+    color: rgb(35, 31, 32);
+}
+
+.banner_container{
+    text-align: center;
+    padding: 0vh 3.75vw 6vh 8vw;
+}
+
+.banner_container > p{
+    font-size: 5vw;
+}
+
+.acreditacion_container{
+    background-color: rgb(189, 75, 74);
+}
+
+.acreditacion_imagen_1{
+    position: absolute;
+    left: -1vw;
+    width: 40%;
+    top: -25%;
+}
+
+.acreditacion_imagen_2{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: -15%;
+}
+
+.acreditacion_text {
+    margin-top: -13vh;
+    height: 50vh;
+}
+
+.acreditacion_header {    
+    font-size: 8vw;
+    margin-left: 20vw;
+    margin-top: 15vh;
+    width: 40vw;
+    padding: 0;
+}
+
+.acreditacion_header > p {
+    margin-bottom: 0;
+}
+
+.acreditacion_body {
+    font-size: 4.35vw;
+    margin-top: 0;
+    padding: 0 25px;
+}
+
+.acreditacion_button {
+    position: absolute;
+    right: 30vw;
+    bottom: .8vh;
+    font-size: 3vh;
+    padding: .5vh 3.5vw;
+}
+
+.patrocinadores {
+    padding: 0 5vw 2.5vh 5vw ;
+}
+
+.patrocinadores_text {
+    font-size: 6vw;
+    padding: 3vh 1vw 0 1vw ;
+    padding-top: 3vw;
+}
+
+.patrocinadores_logo {
+    width: 20vw;
+    padding: 5vw;
+}
+
+.patrocinadores_logo_2 {
+    width: 30vw;
+    padding: 5vw;
+}
+    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner_welcome {
+        top: 12%;
+        font-size: 3.25vw;
+    }
+
+    .banner_container {
+        margin-top: -10vh;
+        padding-bottom: 33vh;
+    }
+
+    .acreditacion_container {
+        height: 100vh;
+    }
+
+    .banner_container > p{
+        font-size: 3.75vw;
+    }
+    
+    .acreditacion_imagen_1{
+        width: 40%;
+        top: -25%;
+    }
+
+    .acreditacion_imagen_2{
+        width: 30%;
+        top: -25%;
+    }
+
+    .acreditacion_text {
+        margin-top: -13vh;
+        height: 50vh;
+    }
+
+    .acreditacion_header {    
+        font-size: 5vw;
+        margin-left: 14vw;
+        margin-top: 0vh;
+        width: 30vw;
+        padding: 0;
+    }
+
+    .acreditacion_body {
+        font-size: 2vw;
+        width: 45%;
+        margin-left: 28vw;
+        margin-top: 0;
+    }
+    
+    .acreditacion_button {
+        right: 25vw;
+        bottom: -20vh;
+    }
+
+    .patrocinadores_text {
+        font-size: 4vw;
+    }
+
+    .patrocinadores_logo {
+        width: 7vw;
+        padding: 2vw 4vw;
+    }
+
+    .patrocinadores_logo_2 {
+        width: 7vw;
+        padding: 2vw 2vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+} 

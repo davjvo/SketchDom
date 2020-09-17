@@ -2,7 +2,7 @@ import React from 'react';
 import instagram from '../../assets/images/social_instagram.png';
 import facebook from '../../assets/images/social_facebook.png';
 import youtube from '../../assets/images/social_youtube.png';
-import './index.css';
+import './redes_sociales.css';
 
 
 const RedesSociales = () => {

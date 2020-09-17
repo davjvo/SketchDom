@@ -4,6 +4,7 @@ import {
     Switch,
     Route,
 } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import { createBrowserHistory } from "history";
 import { Main, Acreditaciones, Concursos, Alley, Program, Invited } from './screens';
 import Head from './components/head';
@@ -11,6 +12,8 @@ import './App.css';
 
 const history = createBrowserHistory();
 
+ReactGA.initialize('UA-177615226-1');
+history.listen(location => ReactGA.pageview(location.pathname));
 function App() {
     return (
         <Router history={history}>

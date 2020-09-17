@@ -1,7 +1,12 @@
 import React from 'react';
-import './index.css';
+import './footer.css';
 
 const Footer = () => {
+
+    const openNewsLetter = () => {
+        window.open('http://eepurl.com/hc7745');
+    }
+
     return (
         <footer className='flex justify_around font_brandon footer_full text_white'>
             <div className='flex column contactos'>
@@ -26,8 +31,8 @@ const Footer = () => {
                 <div className='flex column newsletter_body'>
                     <p className='no_margin'>Entérate de nuevas noticias sobre el</p>
                     <p className='no_margin'>evento, reuniones y mucho más.</p>
-                    <div className='button_fake'>
-                        <p>apuntarme</p>
+                    <div className='button_fake text_white pointer' onClick={openNewsLetter} >
+                        apuntarme
                     </div>
                 </div>
             </div>

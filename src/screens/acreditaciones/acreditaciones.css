@@ -7,13 +7,8 @@
     width: 20vw;
 }
 
-.container_acreditaciones > p{
-    padding: 0;
-    margin: 0;
-}
-
-.container_acreditaciones > p:not(:first-child){
-    margin-top: -9vh;
+.interniliado_container > p:not(:first-child){
+    margin-top: -7vh;
 }
 
 .accesos_desglose{
@@ -32,10 +27,13 @@
     text-align: center;
 }
 
-.container {
-  margin: 2rem;
-  display: grid;
+.grid_container{
   padding: 5vw;
+  margin: 2vw;
+}
+
+.grid {
+  display: grid;
   grid-template-columns: 2.5fr 1.5fr 1.5fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -49,11 +47,11 @@
     padding: 2vh;
 }
 
-.cell_span_1{    
-    display: grid;
-    row-gap: 2rem;
-    grid-row: 1;
-    grid-column: 1/4;
+.cell_banco {
+    grid-column: 2 / 3;
+    font-size: 1vw;
+    align-items: center;
+    padding: 2vh;
 }
 
 .low_padding{
@@ -80,12 +78,6 @@
     font-size: 1vw;
 }
 
-.button_payment{
-    padding: 14px 0px;
-    border: 3px rgb(190,31,46) solid;
-    text-align: center;
-}
-
 .margin_right_low{
     margin-right: 0.2vw;
 }
@@ -110,7 +102,7 @@
     top: 15%;
     left: 15%;
     padding: 0vw 5vw 0vw 2vw;
-    font-size: 3.5vh;
+    font-size: 3vh;
 }
 
 .post_stick_text_title{
@@ -118,11 +110,9 @@
     margin: 0;
 }
 
-.post_stick_payment{
-    width: 15vw; 
-    bottom: 7vh;
-    left: 25vh;
-    font-size: 3vh;
+.post_stick_payment {
+    bottom: 6vh;
+    left: 6.3vw;
 }
 
 .post_stick_text p {
@@ -132,10 +122,6 @@
 
 .virtual_alley_text{
     line-height: 3rem;
-}
-
-.post_stick_payment:hover{
-    cursor: pointer;
 }
 
 .banner_acreditacion{
@@ -171,4 +157,36 @@
 
 .cinta{
     width: 15vw;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 2200px){
+    .post_stick_payment {
+        bottom: 4vh;
+        left: 12.3vw;
+    }
+
+    .bottom_right {
+        bottom: 3vh;
+    }
+
+    .container_acreditaciones {
+        top: 25vh;
+    }
+
+}
+
+@media only screen and (min-width: 2500px){
+    .bottom_right {
+        bottom: 20vh;
+    }
 }

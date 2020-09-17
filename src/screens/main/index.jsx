@@ -18,11 +18,12 @@ import pardo from '../../assets/images/logos/logo_pardo.png';
 import berenice from '../../assets/images/logos/logo_papelería_berenice.png';
 import baltri from '../../assets/images/logos/logo_baltri.png';
 import viart from '../../assets/images/logos/logo_viart.png';
-import './index.css';
+import edgar from '../../assets/images/logos/logo_edgar.png';
+import './main.css';
 
 const Main = () => {
     return (
-        <>
+        <div className='body'>
             <div className='relative white'>
                 <img src={bienvenidos} alt='Alpha' width='100%' />
                 <p className='banner_welcome font_amsi'>BIENVENIDOS A:</p>
@@ -66,9 +67,10 @@ const Main = () => {
                 <img src={berenice} alt='Papeleria berenice' className='patrocinadores_logo_2' />
                 <img src={baltri} alt='Baltri' className='patrocinadores_logo' />
                 <img src={viart} alt='Viart' className='patrocinadores_logo' />
+                <img src={edgar} alt='Edgar' className='patrocinadores_logo' />
             </div>
             <Footer />
-        </>
+        </div>
     );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.css';
 import coming_soon from '../../assets/images/coming_soon.png'
+import './coming_soon.css';
 
 const ComingSoon = () => {
     return <div className='flex center coming_soon'>

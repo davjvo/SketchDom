@@ -16,19 +16,20 @@
     font-display: swap
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
-    font-size: 16px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.font_amsi{
+.font_amsi {
     font-family: 'amsipro';
 }
 
-.font_brandon{
+.font_brandon {
     font-family: 'brandon_textbold';
 }
 
@@ -40,54 +41,46 @@ body{
     flex-direction:  row;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.row_reverse{
+.row_reverse {
     flex-direction: row-reverse;
 }
 
-.justify_around{
+.justify_around {
     justify-content: space-around;
 }
 
-.justify_end{
+.justify_end {
     justify-content: flex-end;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.center{
+.center {
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
-.full_width{
+.full_width {
     width: 100%;
 }
 
-.no_margin{
+.no_margin {
     margin: 0;
 }
 
-.button_fake {
-    font-size: 2vw;
-    border: white solid;
-    padding: .75rem 6rem;
-    text-align: center;
+.no_padding {
+    padding: 0;
 }
 
 .button_fake:hover {
     cursor: pointer;
-}
-
-.logo_sketch {
-    width: 21.675em;
-    height: 6.5em;
 }
 
 .nav_ul{
@@ -103,22 +96,13 @@ body{
 
 .nav_li a:hover{
     color: rgb(189, 75, 74);
-    transform: translate(0, -.75rem);
+    transform: translate(0, -.5vh);
     transition: all .5s linear;
 }
 
 .nav_li a{
     display: block;
     text-align: center;
-    padding: 0.875rem 1rem;
-}
-
-li{
-    border-bottom: .02rem solid rgb(189,75,74);
-}
-
-.li_right_border{
-    border-right: .02rem solid rgb(189,75,74);
 }
 
 .relative {
@@ -131,10 +115,6 @@ li{
 
 .background_red{
     background-color: rgb(190,31,46);
-}
-
-.no_padding{
-    padding: 0;
 }
 
 .absolute{
@@ -154,19 +134,13 @@ li{
 }
 
 .white_marker{
-    width: 25%;
-    height: 1.5vh;
     background-color: white;
 }
 .red_marker{
-    width: 10%;
-    height: 1.5vh;
     background-color: rgb(189, 75, 74);
 }
 
 .black_marker{
-    width: 25%;
-    height: 1.5vh;
     background-color: rgb(0, 0, 0);
 }
 
@@ -174,6 +148,166 @@ li{
     color: black;
 }
 
+.button_fake {
+    border: white solid;
+    text-align: center;
+}
+
 .text_white{
     color: white;
 }
+
+.align_right{
+    text-align: right;
+}
+
+.align_justify{
+    text-align: justify;
+}
+
+nav {
+    background-color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.justify_between{
+    justify-content: space-between;
+}
+
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 5vh;
+    }
+
+    .body {
+        margin-top: 20vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .logo_sketch{
+        width: 75vw;
+        height: 10vh;
+        margin-top: 5.5vh;
+    }
+
+    .hamburger {
+        padding: 2.5vh 2.5vw;
+        width: 15vw;
+        height: 6.5vh;
+        margin-top: 4.3vh;
+    }
+
+    .menu_links { 
+        padding: 1.3vw 0;
+    }
+
+    .menu_links a {
+        padding: 1vw;
+    }
+
+    .menu_mobile {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .hamburger {
+        width: 6.5vw;
+    }
+
+    .logo_sketch {
+        width: 21.675em;
+        height: 6.5em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .body {
+        margin-top: 0;
+    }
+
+    .menu_mobile {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu { 
+        display: flex;
+    }
+
+    li {
+        border-bottom: .02vh solid rgb(189,75,74);
+    }
+
+    .li_right_border {
+        border-right: .02vw solid rgb(189,75,74);
+    }
+
+    .button_fake {
+        font-size: 2vw;
+        padding: .75vh 6vw;
+    }
+
+    .white_marker{
+        width: 15vw;
+        height: 1.5vh;
+    }
+
+    .red_marker{
+        width: 10vw;
+        height: 1.5vh;
+    }
+
+    .black_marker{
+        width: 15vw;
+        height: 1.5vh;
+    }
+
+    .logo_sketch {
+        width: 21.675em;
+        height: 6.5em;
+    }
+
+    .nav_li a:hover{
+        color: rgb(189, 75, 74);
+        transform: translate(0, -.5vh);
+        transition: all .5s linear;
+    }
+
+    .nav_li a{
+        padding: 0.705vw 1vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+} 

@@ -1,0 +1,53 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner_redes_sociales{
+        position: absolute;
+        top: 1vh;
+        right: 3vh;
+        height: 2.5vh;
+    }
+
+    .banner_redes_sociales > a {
+        padding: 0 1.3vw;
+    }
+
+    .banner_redes_sociales > a > img{
+        max-width: 5vw;
+        max-height: 5vw;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner_redes_sociales{
+        position: absolute;
+        top: 10vh;
+        right: 10vh;
+        height: 2.5vh;
+    }
+
+    .banner_redes_sociales > a > img{
+        max-width: 2.5vw;
+        max-height: 2.5vw;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+} 
