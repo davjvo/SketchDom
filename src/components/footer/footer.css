@@ -1,41 +1,41 @@
+.footer_full {
+    background-color: rgb(26, 25, 21);
+    padding: 0 11vw;
+}
 
-    .footer_full {
-        background-color: rgb(26, 25, 21);
-        padding: 0 11vw;
-    }
+.footer_full {
+    flex-direction: column;
+}
 
-    .footer_full {
-        flex-direction: column;
-    }
+.contactos > p {
+    margin-bottom: 0;
+    font-size: 12vw;
+}
 
-    .contactos > p {
-        margin-bottom: 0;
-        font-size: 12vw;
-    }
+.contactos_body, .newsletter_body {
+    font-size: 5.5vw;
+    padding-top: 2vh;
+}
 
-    .contactos_body, .newsletter_body {
-        font-size: 5.5vw;
-        padding-top: 2vh;
-    }
+.newsletter {
+    padding-top: 4vh;
+}
 
-    .newsletter {
-        padding-top: 4vh;
-    }
+.newsletter > p {
+    font-size: 6vw;
+}
 
-    .newsletter > p {
-        font-size: 6vw;
-    }
-
-    .newsletter_body > .button_fake {
-        padding: 3vh 3vw ;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
+.newsletter_body > .button_fake {
+    padding: 3vh 3vw ;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
     
-    /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -43,7 +43,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
     .footer_full {
         flex-direction: row;
     }

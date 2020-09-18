@@ -129,10 +129,6 @@ body {
     justify-content: flex-end;
 }
 
-.no_margin{
-    margin: 0;
-}
-
 .white_marker{
     background-color: white;
 }
@@ -177,32 +173,50 @@ nav {
     justify-content: space-between;
 }
 
+.white_marker{
+    width: 15vw;
+    height: 1.5vh;
+}
+
+.red_marker{
+    width: 10vw;
+    height: 1.5vh;
+}
+
+.black_marker{
+    width: 15vw;
+    height: 1.5vh;
+}
+
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 5vh;
+        font-size: 3.5vh;
+    }
+
+    .menu_links {
+        text-align: right;
     }
 
     .body {
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
 
     .menu {
         display: none;
     }
 
-
     .logo_sketch{
-        width: 75vw;
-        height: 10vh;
+        width: 55vw;
+        height: 7vh;
         margin-top: 5.5vh;
     }
 
     .hamburger {
         padding: 2.5vh 2.5vw;
-        width: 15vw;
-        height: 6.5vh;
+        width: 10vw;
+        height: 4vh;
         margin-top: 4.3vh;
     }
 
@@ -211,7 +225,8 @@ nav {
     }
 
     .menu_links a {
-        padding: 1vw;
+        padding: .5vh 1vw;
+        padding-right: 5vw;
     }
 
     .menu_mobile {
@@ -220,11 +235,26 @@ nav {
         width: 100%;
         z-index: 2;
     }
+
+    .white_marker{
+        width: 35vw;
+        height: .8vh;
+    }
+
+    .red_marker{
+        width: 10vw;
+        height: .8vh;
+    }
+
+    .black_marker{
+        width: 15vw;
+        height: .8vh;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -274,21 +304,6 @@ nav {
     .button_fake {
         font-size: 2vw;
         padding: .75vh 6vw;
-    }
-
-    .white_marker{
-        width: 15vw;
-        height: 1.5vh;
-    }
-
-    .red_marker{
-        width: 10vw;
-        height: 1.5vh;
-    }
-
-    .black_marker{
-        width: 15vw;
-        height: 1.5vh;
     }
 
     .logo_sketch {

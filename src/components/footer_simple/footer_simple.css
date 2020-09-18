@@ -1,22 +1,33 @@
-footer{
-    font-size: 5vh;
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .footer_simple {
+        padding-bottom: 2vh;
+    }
 }
 
-.footer_simple > * {
-    padding-top: 2vh;
-    padding-right: 1vh;
-}
+@media only screen and (min-width: 600px){
+    footer{
+        font-size: 5vh;
+    }
 
-.footer_simple > a > img{
-    max-width: 2.5vw;
-    max-height: 2.5vw;
-    width: auto;
-    height: auto;
-}
+    .footer_simple > * {
+        padding-top: 2vh;
+        padding-right: 1vh;
+    }
 
-footer > a > img{
-    max-width: 2.5vw;
-    max-height: 2.5vw;
-    width: auto;
-    height: auto;
+    .footer_simple > a > img{
+        max-width: 2.5vw;
+        max-height: 2.5vw;
+        width: auto;
+        height: auto;
+    }
+
+    footer > a > img{
+        max-width: 2.5vw;
+        max-height: 2.5vw;
+        width: auto;
+        height: auto;
+    }
 }

@@ -10,24 +10,64 @@ import yellow_sticker from '../../assets/images/acreditacion_sticker.png';
 import RedesSociales from '../../components/redes_sociales';
 import './acreditaciones.css';
 
+const CellCheck = ({ offset }) => {
+    return (
+        <div className={offset ? 'cell flex center cell_offset border_bottom_red border_right_White' : 'cell flex center border_bottom_red  border_right_White'}>
+            <div className='flex center background_black cell_container'>
+                <FontAwesomeIcon icon={faCheck} color='white' />
+            </div>
+        </div>
+    );
+}
 
-const Acreditaciones = () => {
-    const paypalBoss = <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="E4JHDVE9CUHCA" />
-        <input type="image" src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-        <img alt="" border="0" className='' src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" height="1" />
-    </form>;
+const CellClose = () => {
+    return (
+        <div className='cell flex center border_bottom_red  border_right_White'>
+            <div className='flex center background_black cell_container'>
+                <FontAwesomeIcon icon={faTimes} color='white' />
+            </div>
+        </div>
+    );
+}
 
-    const paypalFestival = <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="KH389MVRY6XRQ" />
-        <input type="image" src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-        <img alt="" border="0" className='' src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" height="1" />
-    </form>;
+const CellPagar = ({ onClick, ...props }) => {
+    return (
+        <div className='cell_pagar' onClick={onClick} >
+            Pagar
+            {props.children}
+        </div>
+    )
+}
+
+const PaypalFestival = ({ style }) => {
 
     return (
-        <div className='background_black'>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style={style}>
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="KH389MVRY6XRQ" />
+            <input type="image" src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        </form>
+    );
+}
+
+const PaypalBoss = ({ style }) => {
+    return (
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style={style}>
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="E4JHDVE9CUHCA" />
+            <input type="image" src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        </form>
+    );
+}
+
+const Acreditaciones = () => {
+    const handlePagarClick = event => {
+        event.preventDefault();
+        event.target.children[0].submit();
+    }
+
+    return (
+        <div className='body background_black'>
             <div className='banner_acreditacion relative'>
                 <img src={background} alt='background' className='background absolute' />
                 <img src={textura} alt='textura' className='textura absolute' />
@@ -46,14 +86,15 @@ const Acreditaciones = () => {
                     <img src={PostStick} alt='post_stick' className='post_stick' />
                     <div className='absolute post_stick_text'>
                         <div className='flex column'>
-                            <p className='post_stick_text_title'>Acreditación</p>
-                            <p className='post_stick_text_title'>Festival</p>
+                            <p className='post_stick_text_title no_margin'>Acreditación</p>
+                            <p className='post_stick_text_title no_margin'>Festival</p>
                             <span className='black_marker'></span>
-                            <p className='font_brandon post_stick_text_body '>Para todos esos ilustradores entusiastas, profesionales o el público en general que disfruta del arte y de aprender cosas nuevas.</p>
+                            <p className='font_brandon text_web'>Para todos esos ilustradores entusiastas, profesionales o el público en general que disfruta del arte y de aprender cosas nuevas.</p>
+                            <p className='font_brandon text_mobile'>Para el público en general que disfruta del arte y de aprender cosas nuevas.</p>
                         </div>
                     </div>
                     <div className='button_payment post_stick_payment absolute'>
-                        {paypalFestival}
+                        <PaypalFestival />
                     </div>
                 </div>
                 <div className='relative white font_amsi'>
@@ -63,75 +104,103 @@ const Acreditaciones = () => {
                             <p className='post_stick_text_title'>Acreditación</p>
                             <p className='post_stick_text_title'>Boss</p>
                             <span className='black_marker'></span>
-                            <p className='font_brandon '>Para ilustradores profesionales o ilustradores independientes que quieren tener acceso a workshops, video conferencia con charlistas internacionales, networking y más.</p>
+                            <p className='font_brandon text_web'>Para ilustradores profesionales o ilustradores independientes que quieren tener acceso a workshops, video conferencia con charlistas internacionales, networking y más.</p>
+                            <p className=' font_brandon text_mobile'>Para ilustradores que quieren acceso a workshops, conferencias, networking y más.</p>
                         </div>
                     </div>
                     <div className='button_payment post_stick_payment absolute'>
-                        {paypalBoss}
+                        <PaypalBoss />
                     </div>
                 </div>
             </div>
             <div className='grid_container background_white'>
                 <div className='grid font_brandon '>
-                    <div className='cell background_black text_white border_right_White cell_offset'>Festival</div>
-                    <div className='cell background_black text_white'>Boss</div>
-
-                    <div className='cell low_padding cell_offset'></div>
-                    <div className='cell low_padding'></div>
-
-                    <div className='cell low_padding background_black'></div>
-                    <div className='cell low_padding background_black border_right_White'></div>
-                    <div className='cell low_padding background_black'></div>
-
-                    <div className='cell low_padding cell_offset'></div>
-                    <div className='cell low_padding'></div>
-
-                    <div className='cell border_bottom_red'>Acceso a la galería</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Charlas nacionales</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Charlas internacionales</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faTimes} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Workshops</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faTimes} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Artist alley virtual</div>
-                    <div className='cell border_bottom_red background_black text_white border_right_White'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-                    <div className='cell border_bottom_red background_black text_white'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Concursos</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Lanzamientos exclusivos</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faTimes} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell border_bottom_red'>Portafolio review</div>
-                    <div className='cell border_bottom_red background_black border_right_White'><FontAwesomeIcon icon={faTimes} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell cell_offset background_black border_right_White'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-                    <div className='cell border_bottom_red background_black'><FontAwesomeIcon icon={faCheck} color='white' /></div>
-
-                    <div className='cell cell_offset background_red text_white border_right_White'>Precio</div>
-                    <div className='cell border_bottom_red background_red text_white'>Precio</div>
-
-                    <div className='cell cell_offset background_black text_white border_right_White'>$5 USD</div>
-                    <div className='cell text_white background_black'>$10 USD</div>
-                    <div className='cell padding_low cell_offset'>
-                        {paypalFestival}
+                    <div className='cell background_black text_white border_right_White cell_offset '>
+                        <div className='cell_container'>
+                            Festival
+                        </div>
                     </div>
-                    <div className='cell padding_low'>
-                        {paypalBoss}
+                    <div className='cell background_black text_white'>
+                        <div className='cell_container'>
+                            Boss
+                        </div>
+                    </div>
 
+                    <div className='cell cell_small cell_offset'></div>
+                    <div className='cell cell_small'></div>
+
+                    <div className='cell cell_small background_black'></div>
+                    <div className='cell cell_small background_black border_right_White'></div>
+                    <div className='cell cell_small background_black'></div>
+
+                    <div className='cell cell_small cell_offset'></div>
+                    <div className='cell cell_small'></div>
+
+                    <div className='cell flex center border_bottom_red'>Acceso a la galería</div>
+                    <CellCheck />
+                    <CellCheck />
+
+                    <div className='cell flex center border_bottom_red'>Charlas nacionales</div>
+                    <CellCheck />
+                    <CellCheck />
+
+                    <div className='cell flex center border_bottom_red'>Charlas internacionales</div>
+                    <CellClose />
+                    <CellCheck />
+
+                    <div className='cell flex center border_bottom_red'>Workshops</div>
+                    <CellClose />
+                    <CellCheck />
+
+                    <div className='cell flex center border_bottom_red'>Artist alley virtual</div>
+                    <CellCheck />
+                    <CellCheck />
+
+                    <div className='cell flex center border_bottom_red'>Concursos</div>
+                    <CellCheck />
+                    <CellCheck />
+
+                    <div className='cell flex center border_bottom_red'>Lanzamientos exclusivos</div>
+                    <CellClose />
+                    <CellCheck />
+
+                    <div className='cell flex center m_red'>Portafolio review</div>
+                    <CellClose />
+                    <CellCheck />
+
+                    <div className='cell flex center cell_offset text_white border_right_White'>
+                        <div className='cell_container background_red'>
+                            Precio
+                        </div>
+                    </div>
+
+                    <div className='cell flex center  text_white border_right_White'>
+                        <div className='cell_container background_red'>
+                            Precio
+                        </div>
+                    </div>
+
+                    <div className='cell flex center cell_offset text_white border_right_White'>
+                        <div className='cell_container background_black font_brandon'>
+                            $5 USD
+                        </div>
+                    </div>
+
+                    <div className='cell flex center text_white border_right_White'>
+                        <div className='cell_container background_black font_brandon'>
+                            $10 USD
+                        </div>
+                    </div>
+
+                    <div className='cell padding_low cell_offset '>
+                        <CellPagar onClick={handlePagarClick}>
+                            <PaypalFestival style={{ display: 'none' }} />
+                        </CellPagar>
+                    </div>
+                    <div className='cell padding_low '>
+                        <CellPagar onClick={handlePagarClick}>
+                            <PaypalBoss style={{ display: 'none' }} />
+                        </CellPagar>
                     </div>
                 </div>
                 <div className='font_amsi background_white align_right '>

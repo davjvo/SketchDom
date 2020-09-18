@@ -2,9 +2,9 @@ import React from 'react';
 import logo from '../../assets/images/logos/logo_sketchdom.png';
 import hamburger from '../../assets/images/hamburger.png';
 import { Link } from 'react-router-dom';
+import { Animated } from "react-animated-css";
 
 const Head = () => {
-
     const [displayLinks, setDisplayLinks] = React.useState(false);
 
     const handleHamburgerClick = () => {
@@ -27,7 +27,7 @@ const Head = () => {
                     </ul>
                 </div>
             </nav>
-            <nav className='flex menu_mobile '>
+            <nav className='flex menu_mobile  '>
                 <div className='flex column full_width'>
                     <div className='flex full_width justify_between pointer'>
                         <a href='/' className='brand_logo'>
@@ -35,13 +35,15 @@ const Head = () => {
                         </a>
                         <img src={hamburger} alt='menu' className='hamburger' onClick={handleHamburgerClick} />
                     </div>
-                    <div className='flex column menu_links' style={displayLinks ? null : { display: "none" }} >
-                        <Link to='/acreditaciones' className='text_black'>TICKETS</Link>
-                        <Link to='/invitados' className='text_black'>ARTISTAS INVITADOS</Link>
-                        <Link to='/programa' className='text_black'>PROGRAMA</Link>
-                        <Link to='/alley' className='text_black'>ARTIST ALLEY</Link>
-                        <Link to='/concursos' className='text_black'>CONCURSOS</Link>
-                    </div>
+                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={displayLinks}>
+                        <div className='flex column menu_links font_brandon' style={displayLinks ? null : { display: 'none', transition: '2s' }}>
+                            <Link onClick={handleHamburgerClick} to='/acreditaciones' className='text_black'>TICKETS</Link>
+                            <Link onClick={handleHamburgerClick} to='/invitados' className='text_black'>ARTISTAS INVITADOS</Link>
+                            <Link onClick={handleHamburgerClick} to='/programa' className='text_black'>PROGRAMA</Link>
+                            <Link onClick={handleHamburgerClick} to='/alley' className='text_black'>ARTIST ALLEY</Link>
+                            <Link onClick={handleHamburgerClick} to='/concursos' className='text_black'>CONCURSOS</Link>
+                        </div>
+                    </Animated>
                 </div>
             </nav>
         </header>

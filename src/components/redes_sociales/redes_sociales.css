@@ -1,8 +1,13 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    footer {
+        padding: 4vh;
+    }
+
     .banner_redes_sociales{
         position: absolute;
-        top: 1vh;
+        top: 2vh;
         right: 3vh;
         height: 2.5vh;
     }

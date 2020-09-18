@@ -29,7 +29,12 @@ const Main = () => {
                 <p className='banner_welcome font_amsi'>BIENVENIDOS A:</p>
                 <RedesSociales />
             </div>
-            <div className='banner_container flex column center'>
+            <div className='column center banner_container banner_container_mobile'>
+                <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
+                    vertientes.</p>
+                <span className='red_marker'></span>
+            </div>
+            <div className=' banner_container banner_container_web column center'>
                 <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
                     vertientes. Que con el pasar de los años, se ha convertido en una comunidad.</p>
                 <span className='red_marker'></span>
