@@ -45,7 +45,7 @@ const PaypalFestival = ({ style }) => {
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style={style}>
             <input type="hidden" name="cmd" value="_s-xclick" />
             <input type="hidden" name="hosted_button_id" value="KH389MVRY6XRQ" />
-            <input type="image" src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+            <input type="image" className='input_payment' src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
         </form>
     );
 }
@@ -55,7 +55,7 @@ const PaypalBoss = ({ style }) => {
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style={style}>
             <input type="hidden" name="cmd" value="_s-xclick" />
             <input type="hidden" name="hosted_button_id" value="E4JHDVE9CUHCA" />
-            <input type="image" src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+            <input type="image" className='input_payment' src="https://i.ibb.co/pWM0jnn/Boton-de-pagar-01.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
         </form>
     );
 }
@@ -81,16 +81,16 @@ const Acreditaciones = () => {
                 </div>
                 <RedesSociales />
             </div>
-            <div className='flex space_around center background_black postick_container'>
+            <div className='flex justify_around background_black postick_container'>
                 <div className='relative white font_amsi'>
                     <img src={PostStick} alt='post_stick' className='post_stick' />
-                    <div className='absolute post_stick_text'>
+                    <div className='absolute post_stick_text align_left'>
                         <div className='flex column'>
                             <p className='post_stick_text_title no_margin'>Acreditación</p>
                             <p className='post_stick_text_title no_margin'>Festival</p>
-                            <span className='black_marker'></span>
-                            <p className='font_brandon text_web'>Para todos esos ilustradores entusiastas, profesionales o el público en general que disfruta del arte y de aprender cosas nuevas.</p>
-                            <p className='font_brandon text_mobile'>Para el público en general que disfruta del arte y de aprender cosas nuevas.</p>
+                            <span className='marker_black'></span>
+                            <p className='font_brandon display_web'>Para todos esos ilustradores entusiastas, profesionales o el público en general que disfruta del arte y de aprender cosas nuevas.</p>
+                            <p className='font_brandon display_mobile'>Para el público en general que disfruta del arte y de aprender cosas nuevas.</p>
                         </div>
                     </div>
                     <div className='button_payment post_stick_payment absolute'>
@@ -99,13 +99,13 @@ const Acreditaciones = () => {
                 </div>
                 <div className='relative white font_amsi'>
                     <img src={PostStick} alt='post_stick' className='post_stick' />
-                    <div className='absolute post_stick_text'>
+                    <div className='absolute post_stick_text '>
                         <div className='flex column'>
-                            <p className='post_stick_text_title'>Acreditación</p>
+                            <p className='post_stick_text_title '>Acreditación</p>
                             <p className='post_stick_text_title'>Boss</p>
-                            <span className='black_marker'></span>
-                            <p className='font_brandon text_web'>Para ilustradores profesionales o ilustradores independientes que quieren tener acceso a workshops, video conferencia con charlistas internacionales, networking y más.</p>
-                            <p className=' font_brandon text_mobile'>Para ilustradores que quieren acceso a workshops, conferencias, networking y más.</p>
+                            <span className='marker_black'></span>
+                            <p className='font_brandon display_web'>Para ilustradores profesionales o ilustradores independientes que quieren tener acceso a workshops, video conferencia con charlistas internacionales, networking y más.</p>
+                            <p className=' font_brandon display_mobile'>Para ilustradores que quieren acceso a workshops, conferencias, networking y más.</p>
                         </div>
                     </div>
                     <div className='button_payment post_stick_payment absolute'>

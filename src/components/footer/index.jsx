@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className='flex justify_around font_brandon footer_full text_white'>
             <div className='flex column contactos'>
                 <p className='font_amsi'>Contactos</p>
-                <span className='white_marker'></span>
+                <span className='marker_white'></span>
                 <div className='contactos_body'>
                     <p className='no_margin'>E-mail: <a href='mailto:contactosketchdom@gmail.com' className='text_white'>contactosketchdom@gmail.com</a></p>
                     <div className='flex row'>
@@ -27,7 +27,7 @@ const Footer = () => {
             <div className='flex column newsletter'>
                 <p className='font_amsi no_margin'>Recibe nuestro</p>
                 <p className='font_amsi no_margin'>newsletter!</p>
-                <span className='white_marker'></span>
+                <span className='marker_white'></span>
                 <div className='flex column newsletter_body'>
                     <p className='no_margin'>Entérate de nuevas noticias sobre el</p>
                     <p className='no_margin'>evento, reuniones y mucho más.</p>

@@ -1,0 +1,416 @@
+.img_container {
+    padding: 3vw;
+    margin-top: -15vh;
+}
+
+.img_container > img {
+    width: 15vw;
+}
+
+.text_container > p {
+    padding: 0;
+    margin: 0;
+    padding-top: 2vh;
+    font-size: 5vh;
+}
+
+.text_container {
+    padding: 2vh 16vw;
+}
+
+.button_fake_black {
+    font-size: 2vh;
+    border: black solid;
+    padding: 1.5vh 15vw;
+    text-align: center;
+}
+
+.button_fake_container {
+    padding: 5vh 0;
+}
+
+.youtube_title {
+    font-size: 8vh;   
+}
+
+iframe {
+    padding: 2vw;
+}
+
+.notepad {
+    top: 5vw;
+    left: -5vw;
+    width: 75vw;
+}
+
+.sketch_favorito_container_text {
+    top: 15vw;
+    left: 15vw;
+    width: 35vw;
+}
+
+.sketch_favorito_container_title {
+    font-size: 4vw;
+}
+
+.ediciones_anteriores_container {
+    padding: 3vw 0;
+    overflow: hidden;
+    margin-top: -1vh;
+    height: 170vh;
+}
+
+.ediciones_anteriores_container  > img {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 90vh;
+}
+
+.index-1 {
+    z-index: 1;
+}
+
+.cinta_concursos {
+    top: 5vw;
+    left: 25vw;
+    transform: rotate(35deg);
+}
+
+.banner_acreditaciones {
+    height: 140vh;
+}
+
+.banner_acreditaciones_papel {
+    width: 100%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.banner_acreditaciones_papel > img {
+    width: 100vw;
+}
+
+.banner_image {
+    top: 2.5vh;
+    right: 0;
+}
+
+.img_banner {
+    width: 35vw;
+}
+
+.banner_sticker_text {
+    top: 10vh;
+    left: 10vw;
+    font-size: 8vw;
+}
+
+.gallery_container {
+    margin-top: -50vh;
+    padding: 3vw 0;
+    height: 60vh;
+}
+
+.gallery_title {
+    font-size: 5vh !important;
+}
+
+.royal_rumble_container {
+    padding: 6vw 5vw;
+}
+
+.royal_rumble_container > .button_fake_container {
+    margin-left: 0;
+}
+
+.royal_rumble_container_text > .button_fake_container > .button_fake {
+    padding: 2vh 7vw;
+}
+
+@media only screen and (min-width: 320px) {
+    .gallery_container {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .gallery_container {
+        height: 45vh;
+    }
+}
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .ediciones_anteriores_container {
+        height: 130vh;
+    }
+
+    .text_container > p {
+        padding: 2vh 7vw;
+        padding-bottom: 0;
+    }
+
+    .text_container > .marker_black {
+        margin-left: 7vw;
+    }
+
+    .text_container {
+        margin-top: -12vh;
+    }
+    
+    .banner_acreditaciones {
+        height: 87vh;
+    }
+
+    .text_container > p {
+        font-size: 3vh;
+    }
+
+    .sticker_girl {
+        margin-top: -12vw;
+    }
+
+    .banner_sticker_text {
+        top: 5vh;
+    }
+    
+    .text_container > .button_fake_container {
+        margin-left: 5vw;
+    }
+
+    .post_stick_amarillo {
+        display: none;
+    }
+
+    .royal_rumble_container_title {
+        font-size: 5vh;
+    }
+
+    .royal_rumble_container_text {
+        padding: 0 5vw;
+        font-size: 3vh;
+    }
+
+    .diversity_containter { 
+        font-size: 1.5vh !important;
+    }
+
+    .cinta_concursos {
+        top: -3vw;
+        left: 45vw;
+        transform: rotate(35deg);
+        width: 25vw;
+    }
+
+    .notepad {
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .sketch_favorito_container_text {
+        top: 15vw;
+        left: 35vw;
+        width: 35vw;
+    }
+
+    .button_fake_black {
+        padding: 1.3vh 5vw;    
+        margin-top: -1.3vh;
+    }
+
+    .youtube_title {
+        font-size: 4vh;   
+    }
+
+    .sketch_favorito_container_body_text,.sketch_favorito_container_text > .button_fake_container > .button_fake_black {
+        font-size: 2vh;
+    }
+
+
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 3vh;
+    padding: 1.2vh 6vw;
+}
+
+.cancel {
+    border: 2px solid rgb(190,31,46);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    p.sketch_favorito_container_body_text.display_mobile {
+        margin-bottom: .5vh;
+    }
+
+    .banner_acreditaciones { 
+        margin-top: 31vh;
+    }
+    
+    .text_container {
+        margin-top: -12vh;
+    }
+    
+    .banner_acreditaciones {
+        height: 100vh;
+    }
+
+    .text_container > p {
+        font-size: 3vh;
+    }
+
+    .sticker_girl {
+        margin-top: -12vw;
+    }
+    
+    .button_fake_black {
+        padding: 1.5vh 5vw;
+    }
+
+    .text_container > p {
+        padding: 2vh 12vw 0vh 3vw;
+    }
+
+    .text_container > .marker_black  {
+        margin-left: 3vw;
+    }
+    
+    .text_container > .button_fake_container {
+        margin-left: 15vw;
+    }
+
+    .post_stick_amarillo {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner_acreditaciones {
+        height: 110vh;
+    }
+
+    .gallery_container {
+        height: 30vh;
+    }
+
+    .royal_rumble_container_text > .marker_white {
+        width: 18vw;
+    }
+    
+    .royal_rumble_container_title {
+        font-size: 8vh;
+    }
+
+    .royal_rumble_container_text {
+        padding: 0 5vw;
+        font-size: 3vh;
+    }
+
+    .cinta_concursos {
+        top: 2vh;
+        left: 25vw;
+        transform: rotate(35deg);
+        width: 20vw;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .royal_rumble_container > img {
+        display: block;
+        height: 82vh;
+        width: -moz-available;
+        width: -webkit-fill-available;
+    }
+
+    .gallery_container {
+        height: 65vh;
+        margin-top: -40vh;
+    }
+
+    .banner_acreditaciones { 
+        margin-top: 0;
+    }
+
+    .text_container {
+        margin-top: 0;
+    }
+
+    .text_container > p {
+        padding-right: 20vw;
+    }
+    
+    .img_container {
+        margin-top: -4vh;
+    }
+
+    .royal_rumble_container_text {
+        padding: 0 5vw;
+        font-size: 3vh;
+    }
+    
+    .sketch_favorito_container_body_text, .sketch_favorito_container_text > div > .button_fake_container > .button_fake_black{
+        font-size: 4vh;
+    }
+
+    iframe {
+        width: 475px !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .ediciones_anteriores_container > div {
+        left: 10vw;
+    }
+
+    .button_fake_black {
+        font-size: 4vh;
+    }
+
+    .gallery_title {
+        font-size: 10vh !important;
+    }
+
+    iframe {
+        width: 560px !important;
+    }
+
+    .gallery_container {
+        height: 65vh;
+        margin-top: -20vh;
+    }
+} 
+
+@media only screen and (min-width: 2200px){
+    .banner_acreditaciones_papel{
+        top: 0vh;
+    }
+
+    iframe {
+        width: 600px !important;
+    }
+
+    .gallery_container {
+        height: 65vh;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 2500px){
+}
+

@@ -65,6 +65,7 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .full_width {
@@ -129,14 +130,14 @@ body {
     justify-content: flex-end;
 }
 
-.white_marker{
+.marker_white{
     background-color: white;
 }
-.red_marker{
+.marker_red{
     background-color: rgb(189, 75, 74);
 }
 
-.black_marker{
+.marker_black{
     background-color: rgb(0, 0, 0);
 }
 
@@ -161,6 +162,10 @@ body {
     text-align: justify;
 }
 
+align_left {
+    text-align: left;
+}
+
 nav {
     background-color: white;
 }
@@ -173,24 +178,28 @@ nav {
     justify-content: space-between;
 }
 
-.white_marker{
+.marker_white{
     width: 15vw;
     height: 1.5vh;
 }
 
-.red_marker{
+.marker_red{
     width: 10vw;
     height: 1.5vh;
 }
 
-.black_marker{
+.marker_black{
     width: 15vw;
     height: 1.5vh;
 }
 
+.display_mobile {
+    display: none;
+}
+
 
  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), only screen and (min-width: 600px) {
     body {
         font-size: 3.5vh;
     }
@@ -216,7 +225,7 @@ nav {
     .hamburger {
         padding: 2.5vh 2.5vw;
         width: 10vw;
-        height: 4vh;
+        height: 5vh;
         margin-top: 4.3vh;
     }
 
@@ -236,32 +245,39 @@ nav {
         z-index: 2;
     }
 
-    .white_marker{
+    .marker_white{
         width: 35vw;
         height: .8vh;
     }
 
-    .red_marker{
+    .marker_red{
         width: 10vw;
         height: .8vh;
     }
 
-    .black_marker{
+    .marker_black{
         width: 15vw;
         height: .8vh;
     }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
+    .display_web {
+        display: none;
+    }
+
+    .display_mobile {
+        display: inline-block;
+        margin-top: 1vh !important;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
     .hamburger {
-        width: 6.5vw;
+        width: 8.5vw;
+        height: 8.5vh;    
+        margin-top: 8.3vh;
     }
 
     .logo_sketch {
@@ -319,6 +335,14 @@ nav {
 
     .nav_li a{
         padding: 0.705vw 1vw;
+    }
+
+    .display_web {
+        display: inline;
+    }
+
+    .display_mobile {
+        display: none;
     }
 }
 

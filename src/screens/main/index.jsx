@@ -32,19 +32,19 @@ const Main = () => {
             <div className='column center banner_container banner_container_mobile'>
                 <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
                     vertientes.</p>
-                <span className='red_marker'></span>
+                <span className='marker_red'></span>
             </div>
             <div className=' banner_container banner_container_web column center'>
                 <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
                     vertientes. Que con el pasar de los años, se ha convertido en una comunidad.</p>
-                <span className='red_marker'></span>
+                <span className='marker_red'></span>
             </div>
             <div className='acreditacion_container relative flex row center text_white'>
                 <img src={acreditacion_1} alt='' className='acreditacion_imagen_1' />
                 <div className='flex column acreditacion_text relative center'>
                     <div className='acreditacion_header font_amsi flex column'>
                         <p>Obtén tu acreditación!</p>
-                        <span className='white_marker'></span>
+                        <span className='marker_white'></span>
                     </div>
                     <div className='acreditacion_body font_brandon'>
                         <p>Este año tendremos dos acreditaciones o entradas: acreditación festival y acreditación boss. A
@@ -56,7 +56,7 @@ const Main = () => {
             </div>
             <div className='flex column center patrocinadores_text font_brandon'>
                 <p>Amamos a nuestros patrocinadores</p>
-                <span className='black_marker'></span>
+                <span className='marker_black'></span>
             </div>
             <div className='flex row center wrap justify_around patrocinadores'>
                 <img src={clip_studio} alt='Clip Studio Paint' className='patrocinadores_logo_2' />
