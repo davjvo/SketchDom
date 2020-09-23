@@ -16,6 +16,10 @@
     font-display: swap
 }
 
+.hide {
+    display: none !important;
+}
+
 a {
     text-decoration: none;
 }
@@ -68,8 +72,12 @@ body {
     text-align: center;
 }
 
-.full_width {
+.width_full {
     width: 100%;
+}
+
+.height_full {
+    height: 100vh;
 }
 
 .no_margin {
@@ -162,7 +170,7 @@ body {
     text-align: justify;
 }
 
-align_left {
+.align_left {
     text-align: left;
 }
 
@@ -283,6 +291,11 @@ nav {
     .logo_sketch {
         width: 21.675em;
         height: 6.5em;
+    }
+
+    
+    .body {
+        margin-top: 30vh;
     }
 }
 

@@ -57,9 +57,9 @@ const Concursos = () => {
                 ariaHideApp={false}
             >
                 <h3 className='font_amsi'>Para participar en este concurso tienes que tener por lo menos una acreditación festival</h3>
-                <div className='flex row justify_between'>
-                    <button className='font_brandon cancel pointer' onClick={closeModal}>Cancelar</button>
-                    <button className='font_amsi pointer' onClick={acceptTerms}>Aceptar</button>
+                <div className='flex row justify_between font_brandon'>
+                    <button className='cancel pointer' onClick={closeModal}>Cancelar</button>
+                    <button className='pointer' onClick={acceptTerms}>Aceptar</button>
                 </div>
             </Modal>
             <div className='relative white banner_acreditaciones'>
@@ -105,7 +105,7 @@ const Concursos = () => {
                 </div>
             </div>
             <div className='relative sketchbook_favorito'>
-                <img src={background_sketch_favorito} alt='background' className='full_width' />
+                <img src={background_sketch_favorito} alt='background' className='width_full' />
                 <img src={notepad} alt='notepad' className='absolute notepad' />
                 <img src={cinta} alt='cinta' className='absolute cinta_concursos' />
                 <div className=' absolute sketch_favorito_container_text'>
@@ -123,7 +123,7 @@ const Concursos = () => {
                     </div>
                 </div>
             </div>
-            <div className=' display_mobile full_width'>
+            <div className=' display_mobile width_full'>
                 <div className='flex column center ediciones_anteriores_container background_black'>
                     <p className='youtube_title text_white font_amsi index-1 center'>EDICIONES ANTERIORES</p>
                     <div className='flex column links_container index-1'>
@@ -137,7 +137,7 @@ const Concursos = () => {
                     </div>
                 </div>
             </div>
-            <div className='display_web full_width'>
+            <div className='display_web width_full'>
                 <div className='relative ediciones_anteriores_container background_black'>
                     <img src={papel} alt='background' className='absolute ' />
                     <div className='absolute'>

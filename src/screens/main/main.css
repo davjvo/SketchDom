@@ -113,6 +113,10 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .banner {
+        min-height: 85vh;
+    }
+
     .banner_welcome {
         top: 12%;
         font-size: 3.25vw;
@@ -148,7 +152,7 @@
 
     .acreditacion_header {    
         font-size: 5vw;
-        margin-left: 14vw;
+        margin-left: 12vw;
         margin-top: 0vh;
         width: 30vw;
         padding: 0;
@@ -157,7 +161,7 @@
     .acreditacion_body {
         font-size: 2vw;
         width: 45%;
-        margin-left: 28vw;
+        margin-left: 26vw;
         margin-top: 0;
     }
     
@@ -191,8 +195,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
-
+    .banner {
+        min-height: 135vh;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -1,0 +1,147 @@
+.header_text, .slide_container > a {
+    font-size: 5vw;
+    top: 3vh;
+    left: 20vw;
+}
+
+.slide_art_container {
+    width: 60vw;
+    height: 90vh;
+}
+
+.art, .slide_art_container  {
+    border-radius: 25px;
+}
+
+.artist_name, .artist_handle {
+        font-size: 3vh;
+}
+
+.artist_name {
+    padding: 3vh 2vw;
+    border-radius: 15px;
+    margin: 2vh 5vw;
+}
+
+.artist_handle {
+    padding-bottom: 4vh !important;
+}
+
+.artist_profile {
+    padding-top: 3vh;
+    width: 35vw;
+}
+
+.slide {
+    width: auto;
+}
+
+.big_artist_container {
+    padding-bottom: 5vh;
+}
+
+.dotContainer {
+    top: 50%;
+    right: 2vw;
+    margin-top: -15vh;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    margin: 1vw 0;
+    border-radius: 50%;
+    background-color: rgb(190, 31, 46);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5);
+}
+
+.dot_selected {
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(189, 75, 74,0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(189, 75, 74,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(189, 75, 74,0.5);
+}
+
+.header {
+    height: 25vh;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px), only screen and (max-width: 600px) {
+    .art {
+        width: 90vw;
+        height: auto;
+        bottom: -50vh;
+    }
+
+    .dot {
+        margin-top: 2vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .header {
+        height: 50vh;
+    }
+
+    .header_text {
+        left: 15vw;
+    }
+
+    .art {
+        width: auto;
+        max-width: 90vw;
+        height: 70vh;
+        bottom: -50vh;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .header {
+        height: 25vh;
+    }
+
+
+    .header_text {
+        left: 20vw;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    .art {
+        width: auto;
+        max-width: 60vw;
+        height: auto;
+        max-height: 90vh;
+    }
+
+    .translate_artist {
+        transition: .680s;
+        transform: translate(8.5vw, 0);
+    }
+
+    .revert_translate_artist {
+        transition: .680s;
+        transform: translate(0, 0);
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+} 
+
+@media only screen and (min-width: 2200px){
+}
+
+@media only screen and (min-width: 2500px){
+}
+

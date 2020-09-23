@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/images/logos/logo_sketchdom.png';
 import hamburger from '../../assets/images/hamburger.png';
 import { Link } from 'react-router-dom';
 import { Animated } from "react-animated-css";
 
 const Head = () => {
-    const [displayLinks, setDisplayLinks] = React.useState(false);
+    const [displayLinks, setDisplayLinks] = useState(false);
+    const [hideExpanded, setHideExpanded] = useState(true);
+
+    const handleExpanded = () => {
+
+        if (hideExpanded) {
+            setHideExpanded(!hideExpanded);
+            return;
+        }
+
+        setTimeout(() => {
+            setHideExpanded(!hideExpanded);
+        }, 425);
+    };
 
     const handleHamburgerClick = () => {
         setDisplayLinks(!displayLinks);
+        handleExpanded();
     }
 
     return (
@@ -28,15 +42,15 @@ const Head = () => {
                 </div>
             </nav>
             <nav className='flex menu_mobile  '>
-                <div className='flex column full_width'>
-                    <div className='flex full_width justify_between pointer'>
+                <div className='flex column width_full'>
+                    <div className='flex width_full justify_between pointer'>
                         <a href='/' className='brand_logo'>
                             <img src={logo} alt='logo de sketchdom' className='logo_sketch' />
                         </a>
                         <img src={hamburger} alt='menu' className='hamburger' onClick={handleHamburgerClick} />
                     </div>
-                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={displayLinks}>
-                        <div className='flex column menu_links font_brandon' style={displayLinks ? null : { display: 'none', transition: '2s' }}>
+                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDuration={800} animationOutDuration={400} isVisible={displayLinks}>
+                        <div className='flex column menu_links font_brandon' style={{ display: hideExpanded ? 'none' : 'flex' }}>
                             <Link onClick={handleHamburgerClick} to='/acreditaciones' className='text_black'>TICKETS</Link>
                             <Link onClick={handleHamburgerClick} to='/invitados' className='text_black'>ARTISTAS INVITADOS</Link>
                             <Link onClick={handleHamburgerClick} to='/programa' className='text_black'>PROGRAMA</Link>

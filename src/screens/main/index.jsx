@@ -24,24 +24,24 @@ import './main.css';
 const Main = () => {
     return (
         <div className='body'>
-            <div className='relative white'>
+            <div className='relative white banner'>
                 <img src={bienvenidos} alt='Alpha' width='100%' />
                 <p className='banner_welcome font_amsi'>BIENVENIDOS A:</p>
                 <RedesSociales />
             </div>
             <div className='column center banner_container banner_container_mobile'>
-                <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
+                <p className=' width_full font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
                     vertientes.</p>
                 <span className='marker_red'></span>
             </div>
             <div className=' banner_container banner_container_web column center'>
-                <p className=' full_width font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
+                <p className=' width_full font_brandon'>Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus
                     vertientes. Que con el pasar de los años, se ha convertido en una comunidad.</p>
                 <span className='marker_red'></span>
             </div>
             <div className='acreditacion_container relative flex row center text_white'>
                 <img src={acreditacion_1} alt='' className='acreditacion_imagen_1' />
-                <div className='flex column acreditacion_text relative center'>
+                <div className='flex column acreditacion_text relative center align_left'>
                     <div className='acreditacion_header font_amsi flex column'>
                         <p>Obtén tu acreditación!</p>
                         <span className='marker_white'></span>
