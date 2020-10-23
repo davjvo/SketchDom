@@ -8,7 +8,7 @@ import cinta from '../../assets/images/cinta.png';
 import Footer from '../../components/footer_simple';
 import postick_amarillo from '../../assets/images/indice_postick_amarillo.png';
 import sticker_girl from '../../assets/images/sticker_girls.png';
-import background_sketch_favorito from '../../assets/images/background_sketch.png';
+import background_sketch_favorito from '../../assets/images/background_sketch.jpg';
 import notepad from '../../assets/images/notepad.png';
 import papel from '../../assets/images/Papel.png';
 import './concursos.css';
