@@ -26,10 +26,42 @@ const customStyles = {
     }
 };
 
+const RequisitosGaleria = () => {
+
+    return (
+        <>
+            <ul>
+                <li>Formato: Horizontal</li>
+                <li>Medidas: 1920 x 1080 px</li>
+                <li>Técnica: Libre, digital solamente (usualmente permitimos obras en tradicional pero dada la naturaleza de la galería, nos vemos obligados a recurrir a este único medio)</li>
+                <li>Fecha límite: 05/11/2020 (NO HABRÁ PRÓRROGA)</li>
+            </ul>
+            <strong>Premios: Una beca 100% del curso Social Media Creative impartido en Brothers y una licencia por 2 años de Clip Studio Paint PRO.</strong>
+        </>
+    )
+}
+
+const RequisitosSketch = () => {
+
+    return (
+
+        <>
+            <p>Enviar a nuestro correo lo siguiente:</p>
+            <ul>
+                <li>Vídeo editado que tenga máximo 40 seg. Debe estar grabado de manera horizontal con buena iluminación y calidad de vídeo (usa una lámparita o aprovecha ese solecito que nos azota todos los días 🌞)</li>
+                <li>Imagen/screenshot de comprobante de pago de acreditación (puede ser cualquiera de las 2 contribuciones, festival o boss)</li>
+            </ul>
+            <strong>Favorito del Juez: Una beca de 50% para curso Creatividad Integral en Brothers y una licencia por 2 años de Clip Studio Paint PRO. Favorito del Público: licencia por 2 años de Clip Studio Paint PRO.</strong>
+        </>
+    )
+
+}
+
 const Concursos = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [currentUrl, setCurrentUrl] = useState('');
 
+    const urlGaleria = 'mailto:contactosketchdom@gmail.com?subject=Participación%2Galería%20Sketch';
     const urlRoyaRumble = 'mailto:contactosketchdom@gmail.com?subject=Participación%20Royal%20Rumble';
     const urlSketchFavorito = 'mailto:contactosketchdom@gmail.com?subject=Mi%20Sketch%20Favorito';
 
@@ -57,6 +89,11 @@ const Concursos = () => {
                 ariaHideApp={false}
             >
                 <h3 className='font_amsi'>Para participar en este concurso tienes que tener por lo menos una acreditación festival</h3>
+                {
+                    currentUrl === urlSketchFavorito ?
+                        <RequisitosSketch /> : <RequisitosGaleria />
+                }
+
                 <div className='flex row justify_between font_brandon'>
                     <button className='cancel pointer' onClick={closeModal}>Cancelar</button>
                     <button className='pointer' onClick={acceptTerms}>Aceptar</button>
@@ -82,7 +119,7 @@ const Concursos = () => {
                     <p className='font_amsi gallery_title'>Galería Sketch</p>
                     <div className='marker_black'></div>
                     <p className='font_brandon'>Consiste en la participación de jóvenes artistas dominicanos exponiendo sus obras.</p>
-                    <div className='flex font_brandon button_fake_container pointer' onClick={() => openModal(urlRoyaRumble)}>
+                    <div className='flex font_brandon button_fake_container pointer' onClick={() => openModal(urlGaleria)}>
                         <div className='button_fake_black text_black'>
                             Me apunto!
                         </div>
@@ -97,10 +134,13 @@ const Concursos = () => {
                     <div className='marker_white'></div>
                     <p className='font_brandon'>Este evento permite poner a prueba las capacidades ilustrativas e imaginativas de 10 participantes.</p>
 
-                    <div className='flex center font_brandon button_fake_container pointer' onClick={() => openModal(urlRoyaRumble)}>
+                    {/* <div className='flex center font_brandon button_fake_container pointer' onClick={() => openModal(urlRoyaRumble)}>
                         <div className='button_fake text_white'>
                             Me apunto!
                         </div>
+                    </div> */}
+                    <div className='flex center font_brandon button_fake_container'>
+                        Auch, ya los participantes de este evento ya han sido seleccionados, para la próxima!
                     </div>
                 </div>
             </div>

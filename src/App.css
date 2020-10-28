@@ -205,6 +205,10 @@ nav {
     display: none;
 }
 
+.index-1 {
+    z-index: 1;
+}
+
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px), only screen and (min-width: 600px) {
