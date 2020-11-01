@@ -8,7 +8,7 @@
     background-color: black;
 }
 
-.awssld__bullets > button{
+.awssld__bullets > button {
     background-color: rgb(190, 31, 46);
 }
 
@@ -16,61 +16,51 @@
     background-color: white;
 }
 
-.art, .slide_art_container  {
-    border-radius: 25px;
-}
-
-.artist_name, .artist_handle {
-        font-size: 3vh;
+.artist_name {
+    font-size: 3vh;
 }
 
 .artist_name {
     padding: 3vh 2vw;
     border-radius: 15px;
-    margin: 2vh 5vw;
+    margin: 2vh 1vw;
 }
 
 .artist_handle {
     padding-bottom: 4vh !important;
 }
 
-.artist_profile {
-    padding-top: 3vh;
-    width: 35vw;
-}
-
-.slide {
-    width: auto;
-}
-
 .big_artist_container {
-    padding-bottom: 5vh;
-        padding-bottom: 10vh;
+    padding-bottom: 10vh;
 }
 
-.dotContainer {
-    top: 50%;
-    right: 2vw;
-    margin-top: -15vh;
+.awssld__content, .slide_art_container {
+    border-radius: 15px;
 }
 
 .header {
     height: 25vh;
 }
 
+.shadow_child { 
+    box-shadow: white 0px 0px 1px 0px;
+    border-radius: 15px;
+}
+
+.description_container, .shadow_container {
+    padding: 5vh 3vw;
+}
+
+.shadow_child {
+    padding: 5vh 2vw;
+}
+
+.description_container {
+    font-size: 7vh;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px), only screen and (max-width: 600px) {
-    .art {
-        width: 90vw;
-        height: auto;
-        bottom: -50vh;
-    }
-
-    .dot {
-        margin-top: 2vh;
-    }
-
     .slide_art_container {
         height: 90vh;
     }
@@ -86,13 +76,6 @@
     .header_text {
         left: 15vw;
     }
-
-    .art {
-        width: auto;
-        max-width: 90vw;
-        height: 70vh;
-        bottom: -50vh;
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -102,34 +85,12 @@
         width: 60vw;
     }
 
-    .header {
-        height: 25vh;
-    }
-
-
     .header_text {
         left: 20vw;
     }
 
     .header {
         height: 100vh;
-    }
-
-    .art {
-        width: auto;
-        max-width: 60vw;
-        height: auto;
-        max-height: 90vh;
-    }
-
-    .translate_artist {
-        transition: .680s;
-        transform: translate(8.5vw, 0);
-    }
-
-    .revert_translate_artist {
-        transition: .680s;
-        transform: translate(0, 0);
     }
     
 }

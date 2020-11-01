@@ -48,7 +48,7 @@ const RequisitosSketch = () => {
         <>
             <p>Enviar a nuestro correo lo siguiente:</p>
             <ul>
-                <li>Vídeo editado que tenga máximo 40 seg. Debe estar grabado de manera horizontal con buena iluminación y calidad de vídeo (usa una lámparita o aprovecha ese solecito que nos azota todos los días 🌞)</li>
+                <li>Vídeo editado que tenga máximo 40 seg. Debe estar grabado de manera horizontal con buena iluminación y calidad de vídeo (usa una lámparita o aprovecha ese solecito que nos azota todos los días.)</li>
                 <li>Imagen/screenshot de comprobante de pago de acreditación (puede ser cualquiera de las 2 contribuciones, festival o boss)</li>
             </ul>
             <strong>Favorito del Juez: Una beca de 50% para curso Creatividad Integral en Brothers y una licencia por 2 años de Clip Studio Paint PRO. Favorito del Público: licencia por 2 años de Clip Studio Paint PRO.</strong>
@@ -62,7 +62,7 @@ const Concursos = () => {
     const [currentUrl, setCurrentUrl] = useState('');
 
     const urlGaleria = 'mailto:contactosketchdom@gmail.com?subject=Participación%2Galería%20Sketch';
-    const urlRoyaRumble = 'mailto:contactosketchdom@gmail.com?subject=Participación%20Royal%20Rumble';
+    // const urlRoyaRumble = 'mailto:contactosketchdom@gmail.com?subject=Participación%20Royal%20Rumble';
     const urlSketchFavorito = 'mailto:contactosketchdom@gmail.com?subject=Mi%20Sketch%20Favorito';
 
     function openModal(url) {

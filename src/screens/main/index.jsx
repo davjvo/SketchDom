@@ -19,6 +19,7 @@ import berenice from '../../assets/images/logos/logo_papelería_berenice.jpg';
 import baltri from '../../assets/images/logos/logo_baltri.jpg';
 import viart from '../../assets/images/logos/logo_viart.jpg';
 import edgar from '../../assets/images/logos/logo_edgar.jpg';
+import magma from '../../assets/images/logos/logo_magma.jpg';
 import './main.css';
 
 const Main = () => {
@@ -73,6 +74,7 @@ const Main = () => {
                 <img src={baltri} alt='Baltri' className='patrocinadores_logo' />
                 <img src={viart} alt='Viart' className='patrocinadores_logo' />
                 <img src={edgar} alt='Edgar' className='patrocinadores_logo' />
+                <img src={magma} alt='Magma Studio' className='patrocinadores_logo_2' />
             </div>
             <Footer />
         </div>

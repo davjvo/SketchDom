@@ -128,6 +128,17 @@ iframe {
     padding: 2vh 7vw;
 }
 
+button {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 3vh;
+    padding: 1.2vh 6vw;
+}
+
+.cancel {
+    border: 2px solid rgb(190,31,46);
+}
+
 @media only screen and (min-width: 320px) {
     .gallery_container {
         height: 50vh;
@@ -193,10 +204,6 @@ iframe {
         font-size: 3vh;
     }
 
-    .diversity_containter { 
-        font-size: 1.5vh !important;
-    }
-
     .cinta_concursos {
         top: -3vw;
         left: 45vw;
@@ -230,17 +237,6 @@ iframe {
     }
 
 
-}
-
-button {
-    background-color: white;
-    border: 2px solid black;
-    font-size: 3vh;
-    padding: 1.2vh 6vw;
-}
-
-.cancel {
-    border: 2px solid rgb(190,31,46);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

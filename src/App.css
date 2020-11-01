@@ -41,6 +41,10 @@ body {
     display: flex;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .row {
     flex-direction:  row;
 }
@@ -207,6 +211,19 @@ nav {
 
 .index-1 {
     z-index: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(190,31,46,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(190, 31, 46, 1);
+  outline: 1px solid rgba(190, 31, 46, 1);
 }
 
 
