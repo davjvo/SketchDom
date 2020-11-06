@@ -15,7 +15,7 @@ const Program = () => {
     const prevDay = () => {
         let currentIndex = index - 1;
 
-        if (currentIndex < 0 || currentIndex < data.length) return;
+        if (currentIndex < 0) return;
 
         setIndex(currentIndex);
         setCurrent(data[currentIndex]);
