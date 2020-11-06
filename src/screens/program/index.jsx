@@ -20,7 +20,6 @@ const Program = () => {
         setIndex(currentIndex);
         setCurrent(data[currentIndex]);
     }
-
     const nextDay = () => {
         let currentIndex = index + 1;
 
@@ -30,11 +29,12 @@ const Program = () => {
         setCurrent(data[currentIndex]);
     }
 
+
     const arrows = () => {
         return (
             <div className='flex row_reverse'>
                 <div className='triangle pointer relative index-1'
-                    style={{ visibility: index >= data.length ? 'hidden' : null }}
+                    style={{ visibility: index >= data.length - 1 ? 'hidden' : null }}
                     onClick={nextDay}>
                     &#9654;
                 </div>
@@ -46,9 +46,6 @@ const Program = () => {
             </div>
         );
     }
-
-    React.useEffect(() => {
-    }, []);
 
     return (
         <div className='body background_black'>
@@ -76,18 +73,20 @@ const Program = () => {
                     {arrows()}
                     <div className='program_schedule'>
                         <table cellSpacing={0}>
-                            {
-                                current.activities.map(activity => {
-                                    return (
-                                        <tr key={activity.description}>
-                                            <td>{activity.start}</td>
-                                            <td>–</td>
-                                            <td align='right' className='border_td'>{activity.end}</td>
-                                            <td>{activity.description}</td>
-                                        </tr>
-                                    )
-                                })
-                            }
+                            <tbody>
+                                {
+                                    current.activities.map(activity => {
+                                        return (
+                                            <tr key={activity.description}>
+                                                <td>{activity.start}</td>
+                                                <td width={2}>–</td>
+                                                <td align='right' className='border_td'>{activity.end}</td>
+                                                <td>{activity.description}</td>
+                                            </tr>
+                                        )
+                                    })
+                                }
+                            </tbody>
                         </table>
                     </div>
                     {arrows()}

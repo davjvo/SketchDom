@@ -6,6 +6,261 @@
                 "start": "7:00 pm",
                 "end": "8:00 pm",
                 "description": "Diseño de personaje 2D al mundo 3D impartido por Yasasu"
+            },
+            {
+                "start": "8:10 PM ",
+                "end": "9:10 PM ",
+                "description": "Animación y Arte 3D impartido por Dan Rojaz"
+            }
+        ]
+    },
+    {
+        "title": "17",
+        "activities": [
+            {
+                "start": "7:00 PM ",
+                "end": "8:00 PM ",
+                "description": "Character Design impartido por Jean Sena"
+            },
+            {
+                "start": "8:10 PM ",
+                "end": "9:10 PM ",
+                "description": "Cómo vivir de tus ilustraciones impartido por Jotadé"
+            }
+        ]
+    },
+    {
+        "title": "18",
+        "activities": [
+            {
+                "start": "5:50 PM ",
+                "end": "6:50 PM ",
+                "description": "WIP Witchtober con Elkys Novas & amigos"
+            },
+            {
+                "start": "7:00 PM  ",
+                "end": "8:00 PM  ",
+                "description": "Humor Gráfico en medios de comunicación por Christian Caricatura"
+            },
+            {
+                "start": "9:00 PM  ",
+                "end": "10:00 PM  ",
+                "description": "Meet and Draw/Drink ft. DJ Espectro con Staff de SketchDom"
+            }
+        ]
+    },
+    {
+        "title": "19",
+        "activities": [
+            {
+                "start": "7:10 PM ",
+                "end": "8:10 PM ",
+                "description": "How to be a productive person por Katia Khoury"
+            },
+            {
+                "start": "8:15 PM  ",
+                "end": "9:15 PM  ",
+                "description": "WIP Metástasis por Adrián Fulcar"
+            }
+        ]
+    },
+    {
+        "title": "20",
+        "activities": [
+            {
+                "start": "5:15 PM ",
+                "end": "6:15 PM ",
+                "description": "Animación en RD” por Nicole Hernández & Brayan Jerez"
+            },
+            {
+                "start": "6:20 PM  ",
+                "end": "7:20 PM  ",
+                "description": "Manejo de clients para Ilustradores por Leorián Ricardor"
+            },
+            {
+                "start": "7:30 PM  ",
+                "end": "8:30 PM  ",
+                "description": "WIP Lost in the Dream por NekoCrocodile"
+            },
+            {
+                "start": "8:45 PM  ",
+                "end": "9:45 PM  ",
+                "description": "Que compone una buena Ilustración Infantil por Karla Peña"
+            }
+        ]
+    },
+    {
+        "title": "21",
+        "activities": [
+            {
+                "start": "8:00 AM ",
+                "end": "8:30 AM ",
+                "description": "Charla matutina y bienvenida al evento"
+            },
+            {
+                "start": "9:00 AM ",
+                "end": "10:00 AM   ",
+                "description": "WIP I can see you” por Pikazart "
+            },
+            {
+                "start": "10:00 AM ",
+                "end": "10:30 AM   ",
+                "description": "Meet & Greet de Artistas Invitados Nacionales"
+            },
+            {
+                "start": "11:00 AM  ",
+                "end": "11:45 AM  ",
+                "description": "IGTV Entrevista a Miguel Moisés"
+            },
+            {
+                "start": "11:00 AM ",
+                "end": "12:00 PM ",
+                "description": "Cómo hacer comics y no morir en el intento por El Dee "
+            },
+            {
+                "start": "12:00 PM ",
+                "end": "1:00 PM   ",
+                "description": "Storyboarding for Animation por Luz Batista"
+            },
+            {
+                "start": "1:00 PM ",
+                "end": "1:45 PM   ",
+                "description": "IGTV Entrevista a Naydui"
+            },
+            {
+                "start": "1:10 PM  ",
+                "end": "2:10 PM  ",
+                "description": "WIP Zoilo por Jimmy Taveras"
+            },
+            {
+                "start": "2:20 PM ",
+                "end": "3:20 PM ",
+                "description": "Ultra Dragon Tennis de Jean Sena"
+            },
+            {
+                "start": "3:30 PM ",
+                "end": "4:30 PM   ",
+                "description": "Del Sketchbook a Animación por Jonathan Schmidt"
+            },
+            {
+                "start": "4:15 PM ",
+                "end": "5:00 PM   ",
+                "description": "IGTV Entrevista a Enmanuel Evertz"
+            },
+            {
+                "start": "4:45 PM  ",
+                "end": "5:45 PM  ",
+                "description": "De Rafael a Poteleche por Poteleche "
+            },
+            {
+                "start": "5:00 PM  ",
+                "end": "5:45 PM  ",
+                "description": "IGTV Entrevista a Drawsiree"
+            },
+            {
+                "start": "5:50 PM ",
+                "end": "6:50 PM ",
+                "description": "Videojuegos y Game Jam con Marco Almonte"
+            },
+            {
+                "start": "7:00 PM ",
+                "end": "8:00 PM   ",
+                "description": "Sueña en paneles por Gina Basora"
+            },
+            {
+                "start": "8:10 PM ",
+                "end": "9:10 PM   ",
+                "description": "Si, el Arte es Trabajo por Angurria "
+            },
+            {
+                "start": "8:50 PM  ",
+                "end": "10:00 PM  ",
+                "description": "SketchDom Royal Rumble First Round "
+            }
+        ]
+    },
+    {
+        "title": "22",
+        "activities": [
+            {
+                "start": "8:00 AM ",
+                "end": "8:30 AM ",
+                "description": "Charla matutina y bienvenida al evento"
+            },
+            {
+                "start": "9:00 AM ",
+                "end": "10:00 AM   ",
+                "description": "WIP REMIX Una colección, muchas voces por MuyHumanos"
+            },
+            {
+                "start": "10:10 AM ",
+                "end": "10:50 AM   ",
+                "description": "Meet & Greet de Artistas Invitados Nacionales"
+            },
+            {
+                "start": "11:00 AM  ",
+                "end": "11:45 AM  ",
+                "description": "IGTV Entrevista a Ivanna Candelier"
+            },
+            {
+                "start": "11:20 AM ",
+                "end": "12:20 PM ",
+                "description": "De Palma Sola a Japón por Gabriel Jehu "
+            },
+            {
+                "start": "12:00 PM ",
+                "end": "12:45 PM   ",
+                "description": "IGTV Entrevista a Angélica Lora"
+            },
+            {
+                "start": "12:30 PM ",
+                "end": "1:30 PM   ",
+                "description": "WIP Witchpires” por Francisco Luffy"
+            },
+            {
+                "start": "1:00 PM  ",
+                "end": "1:45 PM  ",
+                "description": "IGTV Entrevista a Anyo"
+            },
+            {
+                "start": "3:00 PM ",
+                "end": "4:00 PM ",
+                "description": "Nerea the Maiden of the Seas Fabiola rosso/Nicole Hernández/Brayan Jerez "
+            },
+            {
+                "start": "4:10 PM ",
+                "end": "4:40 PM   ",
+                "description": "Votaciones"
+            },
+            {
+                "start": "4:15 PM ",
+                "end": "5:00 PM   ",
+                "description": "IGTV Entrevista a Edwin Disla"
+            },
+            {
+                "start": "4:15 PM  ",
+                "end": "5:15 PM  ",
+                "description": "Creando personajes y el Mundo de Disney Animation por Carlos Cabral & Marlon West "
+            },
+            {
+                "start": "5:05 PM  ",
+                "end": "6:05 PM  ",
+                "description": "Documental sobre el cómic dominicano por Jimmy Taveras"
+            },
+            {
+                "start": "6:10 PM ",
+                "end": "7:10 PM ",
+                "description": "Muralismo en siglo XXi por Eddaviel y Jeremy Klonicki "
+            },
+            {
+                "start": "7:20 PM ",
+                "end": "8:00 PM   ",
+                "description": "SketchDom Royal Rumble Last Round"
+            },
+            {
+                "start": "8:10 PM ",
+                "end": "9:10 PM   ",
+                "description": "SketchDom Awards  "
             }
         ]
     }
