@@ -20,6 +20,7 @@ import baltri from '../../assets/images/logos/logo_baltri.jpg';
 import viart from '../../assets/images/logos/logo_viart.jpg';
 import edgar from '../../assets/images/logos/logo_edgar.jpg';
 import magma from '../../assets/images/logos/logo_magma.jpg';
+import cacani from '../../assets/images/logos/logo_cacani.jpg';
 import './main.css';
 
 const Main = () => {
@@ -75,6 +76,7 @@ const Main = () => {
                 <img src={viart} alt='Viart' className='patrocinadores_logo' />
                 <img src={edgar} alt='Edgar' className='patrocinadores_logo' />
                 <img src={magma} alt='Magma Studio' className='patrocinadores_logo_2' />
+                <img src={cacani} alt='Magma Studio' className='patrocinadores_logo' />
             </div>
             <Footer />
         </div>

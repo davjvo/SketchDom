@@ -9,13 +9,11 @@ import data from '../../data/programa.json';
 import './program.css';
 
 const Program = () => {
-    const [index, setIndex] = useState(1);
-    const [current, setCurrent] = useState(data[index - 1]);
+    const [index, setIndex] = useState(0);
+    const [current, setCurrent] = useState(data[index]);
 
     const prevDay = () => {
         let currentIndex = index - 1;
-
-        if (currentIndex < 0) return;
 
         setIndex(currentIndex);
         setCurrent(data[currentIndex]);
@@ -39,7 +37,7 @@ const Program = () => {
                     &#9654;
                 </div>
                 <div className='triangle pointer relative index-1'
-                    style={{ visibility: index <= 1 ? 'hidden' : null }}
+                    style={{ visibility: index <= 0 ? 'hidden' : null }}
                     onClick={prevDay}>
                     &#9664;
                 </div>
