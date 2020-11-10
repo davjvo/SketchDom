@@ -19,6 +19,27 @@ import Diego3 from '../../assets/images/Diego3M.jpg';
 import Ken1 from '../../assets/images/KenM1.jpg';
 import Ken2 from '../../assets/images/KenM2.jpg';
 import Ken3 from '../../assets/images/KenM3.jpg';
+import StephG1 from '../../assets/images/StephG1M.jpg';
+import StephG2 from '../../assets/images/StephG2M.jpg';
+import StephG3 from '../../assets/images/StephG3M.jpg';
+import Yeu1 from '../../assets/images/Yeu1M.jpg';
+import Yeu2 from '../../assets/images/Yeu2M.jpg';
+import Yeu3 from '../../assets/images/Yeu3M.jpg';
+import GyM1 from '../../assets/images/GyM1.jpg';
+import GyM2 from '../../assets/images/GyM2.jpg';
+import GyM3 from '../../assets/images/GyM3.jpg';
+import Isla1 from '../../assets/images/Isla1M.jpg';
+import Isla2 from '../../assets/images/Isla2M.jpg';
+import Isla3 from '../../assets/images/Isla3M.jpg';
+import Camila1 from '../../assets/images/Camila1M.jpg';
+import Camila2 from '../../assets/images/Camila2M.jpg';
+import Camila3 from '../../assets/images/Camila3M.jpg';
+import Desire1 from '../../assets/images/Desire1M.jpg';
+import Desire2 from '../../assets/images/Desire2M.jpg';
+import Desire3 from '../../assets/images/Desire3M.jpg';
+import Mari1 from '../../assets/images/Mari1M.jpg';
+import Mari2 from '../../assets/images/Mari2M.jpg';
+import Mari3 from '../../assets/images/Mari3M.jpg';
 import AwesomeSlider from 'react-awesome-slider';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 import FoldOutSliderStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
@@ -55,15 +76,50 @@ const artists = [
         Vianca2,
         Vianca3,
     ]),
+    createArtist(5, 'Camila Rodriguez', 'https://teespring.com/es/stores/rodistic-2', 'rodistic', [
+        Camila1,
+        Camila2,
+        Camila3,
+    ]),
     createArtist(6, 'Diego Colon', 'https://gumroad.com/emerash', 'emerash0', [
         Diego1,
         Diego2,
         Diego3,
     ]),
-    createArtist(7, ' Ken Ahtzell', 'https://www.instagram.com/ken.ahtzell/', 'ken.ahtzell', [
+    createArtist(7, 'Ken Ahtzell', 'https://www.instagram.com/ken.ahtzell/', 'ken.ahtzell', [
         Ken1,
         Ken2,
         Ken3,
+    ]),
+    createArtist(8, 'Estephanie Gómez', 'https://www.etsy.com/shop/Estephaniecone', 'estephaniecone', [
+        StephG1,
+        StephG2,
+        StephG3,
+    ]),
+    createArtist(9, 'Yeruveli Garcia', 'https://www.instagram.com/tienda.sunflower_eru', 'tienda.sunflower_eru', [
+        Yeu1,
+        Yeu2,
+        Yeu3,
+    ]),
+    createArtist(10, 'Geeks y Medio', 'https://www.instagram.com/geeksymedio', 'geeksymedio', [
+        GyM1,
+        GyM2,
+        GyM3,
+    ]),
+    createArtist(11, 'La isleña Creativa', 'https://www.laislenacreativa.com', 'laislenacreativard', [
+        Isla1,
+        Isla2,
+        Isla3,
+    ]),
+    createArtist(12, 'Mari Gabi Messina', 'https://www.marigabimessina.com/', 'marigabimessina', [
+        Mari1,
+        Mari2,
+        Mari3,
+    ]),
+    createArtist(13, 'Desiree Gneco', 'www.etsy.com/shop/Drawsiree', 'drawsiree', [
+        Desire1,
+        Desire2,
+        Desire3,
     ]),
 ];
 

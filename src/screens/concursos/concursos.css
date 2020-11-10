@@ -139,10 +139,6 @@ button {
     border: 2px solid rgb(190,31,46);
 }
 
-.auch_message { 
-    font-size: 3vw;
-}
-
 @media only screen and (min-width: 320px) {
     .gallery_container {
         height: 50vh;
@@ -297,6 +293,11 @@ button {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    .auch_message { 
+        font-size: 1.5vw;
+    }
+
     .banner_acreditaciones {
         height: 110vh;
     }
