@@ -106,7 +106,6 @@ const Invited = () => {
     const [width, setWidth] = useState(window.innerWidth);
     const [isMobile, setIsMobile] = useState(width <= mobileSize);
 
-
     const handleSelectedArtist = (event, selectedArtist) => {
         setSelected(selectedArtist);
     }
@@ -174,7 +173,7 @@ const Invited = () => {
                             </a>
                         </div>
                         <div className='background_black text_white font_brandon description_artist'>
-                            <p>{selected.Description}</p>
+                            {selected.Description}
                         </div>
                     </div>
                 </div>

@@ -64,6 +64,10 @@
     .slide_art_container {
         height: 90vh;
     }
+
+    .description_artist, .alley_instagram {
+        font-size: 7vw;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -75,6 +79,10 @@
 
     .header_text {
         left: 15vw;
+    }
+
+    .description_artist, .alley_instagram  {
+        font-size: 3vw;
     }
 }
 
@@ -104,4 +112,3 @@
 
 @media only screen and (min-width: 2500px){
 }
-
