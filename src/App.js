@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from "history";
-import { Main, Acreditaciones, Concursos, Alley, Program, Invited } from './screens';
+import { Main, Acreditaciones, Concursos, Alley, Program, Invited, Colab } from './screens';
 import Head from './components/head';
 import './App.css';
 
@@ -23,6 +23,7 @@ function App() {
                 <Route path='/programa' component={Program} />
                 <Route path='/alley' component={Alley} />
                 <Route path='/concursos' component={Concursos} />
+                <Route path='/colaboradores' component={Colab} />
                 <Route path='/acreditaciones' component={Acreditaciones} />
                 <Route path='/' component={Main} />
             </Switch>

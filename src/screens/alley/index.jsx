@@ -16,9 +16,6 @@ import Vianca3 from '../../assets/images/vithcy3M.jpg';
 import Diego1 from '../../assets/images/Diego1M.jpg';
 import Diego2 from '../../assets/images/Diego2M.jpg';
 import Diego3 from '../../assets/images/Diego3M.jpg';
-import Severo1 from '../../assets/images/Severo1M.jpg';
-import Severo2 from '../../assets/images/Severo2M.jpg';
-import Severo3 from '../../assets/images/Severo3M.jpg';
 import Ken1 from '../../assets/images/KenM1.jpg';
 import Ken2 from '../../assets/images/KenM2.jpg';
 import Ken3 from '../../assets/images/KenM3.jpg';
@@ -57,11 +54,6 @@ const artists = [
         Vianca1,
         Vianca2,
         Vianca3,
-    ]),
-    createArtist(5, 'Adriel SFX', 'https://www.instagram.com/severo_sd/', 'severo_rd', [
-        Severo1,
-        Severo2,
-        Severo3,
     ]),
     createArtist(6, 'Diego Colon', 'https://gumroad.com/emerash', 'emerash0', [
         Diego1,

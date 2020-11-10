@@ -37,6 +37,7 @@ const Head = () => {
                         <li className='nav_li li_right_border'><Link to='/invitados' className='text_black'>ARTISTAS INVITADOS</Link></li>
                         <li className='nav_li li_right_border'><Link to='/programa' className='text_black'>PROGRAMA</Link></li>
                         <li className='nav_li li_right_border'><Link to='/alley' className='text_black'>ARTIST ALLEY</Link></li>
+                        <li className='nav_li li_right_border'><Link to='/colaboradores' className='text_black'>COLABORADORES</Link></li>
                         <li className='nav_li'><Link to='/concursos' className='text_black'>CONCURSOS</Link></li>
                     </ul>
                 </div>

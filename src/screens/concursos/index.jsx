@@ -57,6 +57,14 @@ const RequisitosSketch = () => {
 
 }
 
+const AuchMessage = () => {
+    return (
+        <div className='flex center font_brandon auch_message'>
+            * Auch, se ha cerrado el concurso :(
+        </div>
+    );
+}
+
 const Concursos = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [currentUrl, setCurrentUrl] = useState('');
@@ -139,9 +147,7 @@ const Concursos = () => {
                             Me apunto!
                         </div>
                     </div> */}
-                    <div className='flex center font_brandon button_fake_container'>
-                        Auch, ya los participantes de este evento ya han sido seleccionados, para la próxima!
-                    </div>
+                    <AuchMessage />
                 </div>
             </div>
             <div className='relative sketchbook_favorito'>
@@ -155,11 +161,12 @@ const Concursos = () => {
                         <div className='marker_black'></div>
                         <p className='sketch_favorito_container_body_text display_web'>Concurso en el que los participantes mostrarán su sketchbook y el público votará por el mejor.</p>
                         <p className='sketch_favorito_container_body_text display_mobile'>El mejor sketchbook será decidido por el público.</p>
-                        <div className='flex center button_fake_container no_padding no_margin pointer' onClick={() => openModal(urlSketchFavorito)}>
+                        {/* <div className='flex center button_fake_container no_padding no_margin pointer' onClick={() => openModal(urlSketchFavorito)}>
                             <div className='button_fake_black'>
                                 Me apunto!
                             </div>
-                        </div>
+                        </div> */}
+                        <AuchMessage />
                     </div>
                 </div>
             </div>
