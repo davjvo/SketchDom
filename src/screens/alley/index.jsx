@@ -13,6 +13,15 @@ import Elkys3 from '../../assets/images/ElkysM3.jpg';
 import Vianca1 from '../../assets/images/vithcy1M.jpg';
 import Vianca2 from '../../assets/images/vithcy2M.jpg';
 import Vianca3 from '../../assets/images/vithcy3M.jpg';
+import Diego1 from '../../assets/images/Diego1M.jpg';
+import Diego2 from '../../assets/images/Diego2M.jpg';
+import Diego3 from '../../assets/images/Diego3M.jpg';
+import Severo1 from '../../assets/images/Severo1M.jpg';
+import Severo2 from '../../assets/images/Severo2M.jpg';
+import Severo3 from '../../assets/images/Severo3M.jpg';
+import Ken1 from '../../assets/images/KenM1.jpg';
+import Ken2 from '../../assets/images/KenM2.jpg';
+import Ken3 from '../../assets/images/KenM3.jpg';
 import AwesomeSlider from 'react-awesome-slider';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 import FoldOutSliderStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
@@ -48,6 +57,21 @@ const artists = [
         Vianca1,
         Vianca2,
         Vianca3,
+    ]),
+    createArtist(5, 'Adriel SFX', 'https://www.instagram.com/severo_sd/', 'severo_rd', [
+        Severo1,
+        Severo2,
+        Severo3,
+    ]),
+    createArtist(6, 'Diego Colon', 'https://gumroad.com/emerash', 'emerash0', [
+        Diego1,
+        Diego2,
+        Diego3,
+    ]),
+    createArtist(7, ' Ken Ahtzell', 'https://www.instagram.com/ken.ahtzell/', 'ken.ahtzell', [
+        Ken1,
+        Ken2,
+        Ken3,
     ]),
 ];
 
