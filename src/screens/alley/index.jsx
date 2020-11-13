@@ -40,6 +40,9 @@ import Desire3 from '../../assets/images/Desire3M.jpg';
 import Mari1 from '../../assets/images/Mari1M.jpg';
 import Mari2 from '../../assets/images/Mari2M.jpg';
 import Mari3 from '../../assets/images/Mari3M.jpg';
+import Sena1 from '../../assets/images/Sena1M.jpg';
+import Sena2 from '../../assets/images/Sena2M.jpg';
+import Sena3 from '../../assets/images/Sena3M.jpg';
 import AwesomeSlider from 'react-awesome-slider';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 import FoldOutSliderStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
@@ -120,6 +123,11 @@ const artists = [
         Desire1,
         Desire2,
         Desire3,
+    ]),
+    createArtist(14, 'Jean Sena', 'https://www.instagram.com/kosena_master/', 'kosena_master', [
+        Sena1,
+        Sena2,
+        Sena3,
     ]),
 ];
 

@@ -59,7 +59,7 @@ const RequisitosSketch = () => {
 
 const AuchMessage = () => {
     return (
-        <div className='flex center font_brandon auch_message'>
+        <div className='flex font_brandon auch_message'>
             * Auch, se ha cerrado el concurso :(
         </div>
     );
