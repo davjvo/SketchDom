@@ -1,4 +1,16 @@
 
+.collaborator {
+    height: 25vh;
+    width: 50vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collapsible {
+    transition: max-height 0.2s ease-out;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px), only screen and (max-width: 600px) {
     .collabs {
@@ -25,18 +37,45 @@
     }
 }
 
+@media only screen and (min-width: 375px) {
+    .collaborator {
+        height: 25vh;
+        width: 38vw;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .collaborator {
+        height: 30vh;
+        width: 40vw;
+    }
+}
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .collaborator {
+        height: 35vh;
+        width: 30vw;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .collaborator {
+        height: 50vh;
+        width: 30vw;
+    }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .collaborator {
+        height: 70vh;
+        width: 30vw;
+    }
 
 } 
 

@@ -56,6 +56,7 @@ const Head = () => {
                             <Link onClick={handleHamburgerClick} to='/invitados' className='text_black'>ARTISTAS INVITADOS</Link>
                             <Link onClick={handleHamburgerClick} to='/programa' className='text_black'>PROGRAMA</Link>
                             <Link onClick={handleHamburgerClick} to='/alley' className='text_black'>ARTIST ALLEY</Link>
+                            <Link onClick={handleHamburgerClick} to='/colaboradores' className='text_black'>COLABORADORES</Link>
                             <Link onClick={handleHamburgerClick} to='/concursos' className='text_black'>CONCURSOS</Link>
                         </div>
                     </Animated>

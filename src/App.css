@@ -103,8 +103,9 @@ body {
     overflow: hidden;
 }
 
-.nav_li{
+.nav_li {
     float: right;
+    font-size: 1.2vw;
 }
 
 .nav_li a:hover{
