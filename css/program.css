@@ -1,0 +1,71 @@
+body {
+    background-image: url('../assets/bg-tickets.png');
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+}
+.window > .content {
+    padding: 150px 0;
+}
+
+.window-header {
+    width: 75vw;
+    left: 15%;
+}
+
+.program {
+    padding: 2vh 5vw;
+}
+
+.program > div > *, .program-header-2 > div {
+    padding: 5px 15px;
+}
+
+.program > div {
+    background-color: #FFF;
+}
+
+.program-header-1 {
+    background-color: #A527AF;
+    color: #FFF;
+}
+
+.program-header-2 {
+    background-color: #C3DCD9;
+    border-top: none;
+    border-bottom: none;
+}
+
+.program-header-1, .program-header-2 {
+    font-weight: 700;
+}
+
+.program-header-1, .program-header-2, .program-detail > div {
+    border: 2px solid #7B2A89;
+
+}
+
+.program-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 !important;
+    margin: 0;
+    border: 2px solid #7B2A89;
+}
+
+.program-detail > div {
+    border-top: none;
+    border-left: none;
+}
+
+.program-detail:last-child {
+    border-right: none;
+}
+
+.program-detail > div {
+    height: 70vh;
+    font-size: 48px;
+    padding: 25px !important;
+}

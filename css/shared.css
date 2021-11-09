@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'amsipro';
+    src: url(../assets/font/AmsiPro-Ultra.otf);
+}
+
+
+body {
+    margin: 0;
+    font-family: 'amsipro';
+}
+
+p {
+    font-size: 1.2em;
+}
+
+
+.nav {
+    background-color: #FEA1D0;
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+}
+
+.nav > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav > .nav-links {
+    display: inline;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a, .nav > .nav-title > a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+}
+
+.nav > .nav-links > a > span{
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.center {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.window-feature {
+    margin: 0 15px;
+    background-color: #fff
+}
+
+.window {
+    position: absolute;
+    width: 50vw;
+    left: 4%;
+    bottom: 13%;
+    overflow: hidden;
+    box-shadow: 10px 10px #6A1C7A;
+    border: .5px solid #2F0745;
+}
+
+.window > .header {
+    background-color: red;
+    height: 65px;
+    border-bottom: 2px solid #300549;
+    padding: 12px 0;
+}
+
+.window >  .header > .window-title {
+    padding: 0 20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.window > .content {
+    background-color: #E4FCFE;
+    height: 100%;
+    font-size: 50px;
+}
+
+.window-header > .content {
+    font-size: 250px;
+    padding: 0 0 80px 0;
+}
+
+.shadow {
+    box-shadow: 10px 10px #6A1C7A;
+    border: .5px solid #2F0745;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}

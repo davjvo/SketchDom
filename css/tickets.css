@@ -1,0 +1,99 @@
+body {
+    background-image: url('../assets/bg-tickets.png');
+}
+
+.banner {
+    position: relative;
+    height: 150vh;
+}
+
+.window > .content {
+    padding: 30px 0;
+}
+
+.window-header {
+    width: 75vw;
+    left: 15%;
+    bottom: 35%;
+    height: unset;
+}
+
+.window-festival > .content > *, .window-boss > .content > * {
+    padding: 17px;
+}
+
+.window-festival, .window-boss {
+    color: #7B2A89;
+    bottom: 10%;
+    width: 30vw;
+    height: 45vh;
+}
+
+.window-festival > .content, .window-boss > .content {
+    height: unset;
+}
+
+.window-festival {
+    left: 17%;
+}
+
+.window-boss {
+    left: 57%
+}
+
+.window > .content > img {
+    align-self: center;
+    height: 50px;
+    width: 50px;
+}
+
+.button-payment {
+    all: unset;
+    align-self: center;
+    width: 30%;
+    background-color: #afe3f1;
+    border: .5px solid #a3a3a3;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.features {
+    position: relative;
+    padding: 5vh 10vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    padding: 100px 35px;
+    background-color: #fff;
+}
+
+.right-border {
+    border-right: 2px solid #A925AF;
+}
+
+.grid > * {
+    font-size: 25px;
+    color: #AA46CC;
+    font-weight: 650;
+    padding: 1.5vh .5vw;
+    border-bottom: 1px solid #AA46CC;
+}
+
+.grid-card {
+    background-color: #AA46CC;
+    color: #fff;
+}
+
+.grid-no-border-bottom {
+    border-bottom: none;
+}
+
+.account {
+    padding: 0 25px 25px 0;
+    position: absolute;
+    right: 0;
+    top: 90%;
+    box-shadow: 10px 10px #6A1C7A;
+}
