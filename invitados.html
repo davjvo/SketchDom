@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchDom 2021</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/parallax.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light barra-principal">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img height="50px" src="img/logos/sketchdom.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="tickets.html">Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="invitados.html">Invitados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="programa.html">Programa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="concursos.html">Concursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="colaboradores.html">Colaboradores</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <table style="width:90%" class="ventana-roja m-auto mt-3">
+        <tr>
+          <th class="ventana-header">sketchdom21.exe <img class="float-end" src="img/equis.png" width="30"><img class="float-end me-1" src="img/maximizar.png" width="30"><img class="float-end me-1" src="img/menos.png" width="30"></th>
+        </tr>
+        <tr>
+          <td class="p-4">
+            <div class="float-end me-2 mt-2 clearfix">
+              <img width="25" src="img/settings.png">
+              <img width="25" src="img/help.png">
+            </div>
+            <div style="font-size:10vw; line-height: 1em; text-align:center">ARTISTAS INVITADOS</div>
+          </td>
+        </tr>
+      </table>
+
+      <table class="ventana-roja my-3 m-auto ">
+        <tr>
+          <th class="ventana-header"> <img class="float-end" src="img/equis.png" width="30"><img class="float-end me-1" src="img/maximizar.png" width="30"><img class="float-end me-1" src="img/menos.png" width="30"></th>
+        </tr>
+        <tr>
+          <td class="text-center p-3">
+              <div>Contenido aquí</div>
+            <div>
+                Texto aquí
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table class="ventana-morada m-auto">
+        <tr>
+          <th>about sketchdom 2021  <img class="float-end" src="img/equis.png" width="30"><img class="float-end me-1" src="img/maximizar.png" width="30"><img class="float-end me-1" src="img/menos.png" width="30"></th>
+        </tr>
+        <tr>
+          <td class="ventana-div">
+            <img width="80" src="img/logos/sketchdom-1.png">
+            <div class="float-end me-4">Sketch Dom R<br>Versión 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="scroll">
+            <img style="position:absolute;top:-1px;right:0;" src="img/scroll-top.png">
+            <img style="position:absolute;bottom:-2px;right:0;" src="img/scroll-bottom.png">
+            Lorem...</td>
+        </tr>
+      </table>
+
+  
+    
+
+    <!-- Scripts -->
+    <script>
+  
+    // Pretty simple huh?
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene, {
+    relativeInput: false,
+    clipRelativeInput: true
+  });
+  
+    </script>
+
+</body>
+</html>

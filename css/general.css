@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'AmsiPro';
+    src: url('../fonts/AmsiPro-Ultra.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'AmsiPro';
+    background-image: url('../img/bg.jpg');
+    background-repeat: repeat-x;
+}
+
+.barra-principal {
+    background-color: #fea1d0;
+}
+
+.barra-principal .navbar-collapse {
+    flex-grow: 0;
+}
+
+.barra-principal .ul-nav {
+    float:right;
+}
+
+/* Ventanas */
+
+.ventana-roja, .ventana-morada {
+
+    border: 4px solid #320546;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(10px 10px 0px #681d7c);
+
+}
+
+.logo-vr {
+    width: 300px;
+}
+
+.ventana-roja th, .ventana-morada th {
+
+    border-bottom: 4px solid #320546;
+    padding: 4px;
+    color: white;
+
+}
+
+.ventana-div {
+    border-bottom: 4px solid #320546;
+}
+
+.ventana-roja th {
+    background-color: #ee1e38;
+}
+
+.ventana-morada th {
+    background-color: #a527af;
+}
+
+.ventana-roja td, .ventana-morada td {
+    background-color: #ccc transparent;
+    padding: 5px;
+}
+
+/* Ventanas */
+
+.scene, .layer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.scene {
+    min-height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+}
+.layer {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.div-container {
+    position:absolute;
+    left:0;
+    top:100px;
+    width:100%;
+}
+
+.about-home {
+    width: 400px;
+    margin-top: -150px;
+    margin-left: 45%;
+}
+
+.scroll {
+    background-image: url(../img/scroll-mid.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    position: relative;
+    padding-right: 15px !important;
+}
+
+.bb {
+    border-bottom: 2px solid #a626af;
+}
+
+.br {
+    border-right: 2px solid #a626af;
+}
+
+.ventana-festival {
+    float: left;
+    width:30%;
+    margin-top:-25px;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.ventana-boss {
+    float: left;
+    width:30%;
+    margin-top:-25px;
+
+}
+
+.ventana-cuenta {
+
+    margin-left: 40%;
+    margin-top: -35px;
+    margin-bottom: 20px;
+
+}
+
+.ventana-participar {
+
+    position:absolute;
+    bottom:-50%;
+    right:0;
+    width:40%;
+
+}
+
+.ventana-concurso {
+    width:65%;
+    margin-bottom: 12%;
+}
+
+.div-bloque-concurso {
+    position: relative;
+    width:65%;
+}
+
+.ventana-colaborador {
+
+    position:absolute;
+    bottom:-60%;
+    right:0;
+    width:40%;
+
+}
+
+.ventana-data-colaborador {
+    width:65%;
+    margin-bottom: 12%;
+}
+
+.div-bloque-colaborador {
+    position: relative;
+    width:65%;
+}
+
+@media screen and (max-width: 992px) {
+
+    .barra-principal .ul-nav {
+        float:none;
+    }
+
+    .div-container {
+        position:static;
+        margin-top:30px;
+    }
+
+    .logo-vr {
+        width: 200px;
+    }
+
+    .about-home {
+        margin: auto;
+        width: 314px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ventana-roja, .ventana-morada {
+
+        width: 90%;
+    
+    }
+
+    .ventana-festival {
+        float: none;
+        width:90%;
+        margin: 15px auto;
+    }
+    
+    .ventana-boss {
+        float: none;
+        width:90%;
+        margin: 15px auto;
+    
+    }
+
+    .ventana-cuenta {
+
+        margin:auto;
+        margin-bottom: 20px;
+        width: 90%;
+    
+    }
+
+    .ventana-participar {
+
+        position:static;
+        width:100%;
+    
+    }
+    
+    .ventana-concurso {
+        width:100%;
+        margin-bottom: 15px;
+    }
+    
+    .div-bloque-concurso {
+        position: relative;
+        width:90%;
+    }
+
+    .ventana-colaborador {
+
+        position:static;
+        width:100%;
+    
+    }
+    
+    .ventana-data-colaborador {
+        width:100%;
+        margin-bottom: 15px;
+    }
+    
+    .div-bloque-colaborador {
+        position: relative;
+        width:90%;
+    }
+
+  }
+

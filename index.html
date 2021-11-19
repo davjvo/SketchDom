@@ -1,118 +1,231 @@
-<html>
-
-<title>SketchDom</title>
-<link rel="stylesheet" href="css/shared.css">
-<link rel="stylesheet" href="css/index.css">
-<script src="js/scripts.js"></script>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchDom 2021</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/parallax.min.js"></script>
+</head>
 <body>
-    <div class="column">
-        <!-- Menu -->
-        <section class="nav">
-            <div class="row justify-between nav">
-                <div class="nav-title">
-                    <a href="/">
-                        <img src="/assets/logos/sketchdom.png" width="250" />
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <a href="tickets.html"><span>Tickets</span></a>
-                    <a href="https://www.google.com"><span>Invitados</span></a>
-                    <a href="program.html"><span>Programas</span></a>
-                    <a href="https://www.google.com"><span>Concursos</span></a>
-                    <a href="https://www.google.com"><span>Colaboradores</span></a>
-                </div>
-            </div>
-        </section>
+    <nav class="navbar navbar-expand-lg navbar-light barra-principal">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img height="50px" src="img/logos/sketchdom.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="tickets.html">Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="invitados.html">Invitados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="programa.html">Programa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="concursos.html">Concursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="colaboradores.html">Colaboradores</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
-        <section class="banner">
-            <div class="banner-container">
-                <div class="head window column">
-                    <div class="header row align-center justify-between">
-                        <div class="row center title">
-                            <img height="30" src="/assets/logos/sketchdom-1.png" />
-                            <p>SKETCHDOM21.EXE</p>
-                        </div>
-                        <div class="row">
-                            <div class="window-feature">
-                                <img src="./assets/menos.png" alt="Minimizar" />
-                            </div>
-                            <div class="window-feature">
-                                <img src="./assets/maximizar.png" alt="Agrandar" />
-                            </div>
-                            <div class="window-feature">
-                                <img src="./assets/equis.png" alt="Cerrar" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-end buttons">
-                        <img height="50" src="/assets/settings.png" alt="Settings" />
-                        <img height="50" src="/assets/help.png" alt="Help" />
-                    </div>
-                    <img src="/assets/logos/sketchdom-1.png" />
-                    <img class="about" src="/assets/about-sketch.jpg" />
-                </div>
-                <div class="window">
-                    <div class="header row align-center justify-end">
-                        <div class="window-feature">
-                            <img src="./assets/menos.png" />
-                        </div>
-                        <div class="window-feature">
-                            <img src="./assets/maximizar.png" />
-                        </div>
-                        <div class="window-feature">
-                            <img src="./assets/equis.png" />
-                        </div>
-                    </div>
-                    <div class="content column ">
-                        <p>¿Quieres tus tickets?</p>
-                        <div class="buttons row align-center justify-around">
-                            <div>Sí</div>
-                            <div>Obvio</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner-player">
-                    <!-- Row header -->
-                    <div class="header row  justify-around">
-                        <div class="circle"></div>
-                        <div class="title column center">
-                            <p>La Pandemia no para mi fiesta</p>
-                            <p>Artista Desconocido</p>
-                        </div>
-                    </div>
+    <div class="d-none d-lg-block">
+      <div id="scene" class="scene">
+        <div class="layer" data-depth="0.20">
+          <div style="position:absolute; top:50px;right:300px">
+            <img src="img/sol.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.80">
+          <div style="position:absolute; top:380px; right:250px">
+            <img src="img/nube-1.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.60">
+          <div style="position:absolute; top:100px; left:100px">
+            <img src="img/nube-2.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.40">
+          <div style="position:absolute; top:450px; right:350px">
+            <img src="img/nube-3.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.30">
+          <div style="position:absolute; top:250px; left:250px">
+            <img src="img/nube-4.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.40">
+          <div style="position:absolute; bottom:-10px; right:-65px">
+            <img src="img/wave-1.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.10">
+          <div style="position:absolute; bottom:-10px;right:200px">
+            <img src="img/isla.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.20">
+          <div style="position:absolute; bottom:-30px; right:-150px">
+            <img src="img/wave-2.png">
+          </div>
+        </div>
+        <div class="layer" data-depth="0.30">
+          <div style="position:absolute; bottom:50px; right:50px">
+            <img src="img/playlist.png">
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="div-container">
 
-                    <!-- Player status -->
+      <div class="me-4 float-end d-none d-lg-block" style="width:80px">
+        <div class="text-center">
+          <img width="60" src="img/reciclaje.png">
+          <div>Papelera</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/folder.png">
+          <div>Asdafasd</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/documento.png">
+          <div>Sketchdom 21.doc</div>
+        </div>
+      </div>
+      <div class="me-4 float-end d-none d-lg-block" style="width:80px">
+        <div class="text-center">
+          <img width="60" src="img/logo-oficial.png">
+          <div>sketch.exe</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/favoritos.png">
+          <div>Favoritos</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/referencias.png">
+          <div>Referencias</div>
+        </div>
+      </div>
 
-                    <!-- Controls -->
-                </div>
-            </div>
-        </section>
+      <div class="ms-4 float-start d-none d-lg-block" style="width:80px">
+        <div class="text-center">
+          <img width="60" src="img/royal-rumble.png">
+          <div>Royal Rumble.exe</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/artista-invitados.png">
+          <div>Artistas Invitados</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/charlas.png">
+          <div>Talleres y Charlas.ppt</div>
+        </div>
+        <div class="text-center mt-4">
+          <img width="60" src="img/galeria-sketch.png">
+          <div>Galería Sketch</div>
+        </div>
 
-        <section class="sponsors">
-            <div class="column center organiza">
-                <h1>Organiza</h1>
-                <div>
-                    <hr>
-                </div>
-                <img src="/assets/logos/logo_alpha.jpg" />
+      </div>
+
+      <table class="ventana-roja m-auto">
+        <tr>
+          <th class="ventana-header">sketchdom21.exe <img class="float-end" src="img/equis.png" width="30"><img class="float-end me-1" src="img/maximizar.png" width="30"><img class="float-end me-1" src="img/menos.png" width="30"></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="float-end me-2 mt-2">
+              <img width="25" src="img/settings.png">
+              <img width="25" src="img/help.png">
             </div>
-            <div class="column center asupicia">
-                <h1>Auspiciadores Generales</h1>
-                <div>
-                    <hr>
-                </div>
-                <div class="row justify-around wrap">
-                    <img height="150" src="assets/logos/logo_brother.jpg" alt="Brother" />
-                    <img height="150" src="assets/logos/logo_papelería_berenice.jpg" alt="Papelería Berenice" />
-                    <img height="150" src="assets/logos/logo_boca.jpg" alt="Boca" />
-                    <img height="150" src="assets/logos/logo_edgar.jpg" alt="Edgar Nuñez" />
-                    <img height="150" src="assets/logos/logo_cultura_comic.jpg" alt="Cultura Comic" />
-                </div>
+            <br>
+            <img class="m-5 img-fluid logo-vr" src="img/logos/sketchdom-1.png" alt="">
+          </td>
+        </tr>
+      </table>
+
+      <table class="ventana-morada about-home">
+        <tr>
+          <th>about sketchdom 2021  <img class="float-end" src="img/equis.png" width="30"><img class="float-end me-1" src="img/maximizar.png" width="30"><img class="float-end me-1" src="img/menos.png" width="30"></th>
+        </tr>
+        <tr>
+          <td class="ventana-div">
+            <img width="80" src="img/logos/sketchdom-1.png">
+            <div class="float-end me-4">Sketch Dom R<br>Versión 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="scroll">
+            <img style="position:absolute;top:-1px;right:0;" src="img/scroll-top.png">
+            <img style="position:absolute;bottom:-2px;right:0;" src="img/scroll-bottom.png">
+            Sketchdom es un evento que busca unir, promover e impulsar el talento ilustrativo criollo en todas sus vertientes. Que con el pasar de los años se ha convertido en una comunidad.</td>
+        </tr>
+      </table>
+
+      <div class="d-none d-lg-block">
+      <table style="margin-left: 150px; width:450px" class="ventana-roja">
+        <tr>
+          <th class="ventana-header"> <img class="float-end" src="img/equis.png" width="30"><img class="float-end me-1" src="img/maximizar.png" width="30"><img class="float-end me-1" src="img/menos.png" width="30"></th>
+        </tr>
+        <tr>
+          <td class="text-center p-3">
+            <img width="50" src="img/exclamacion.png">
+            <div>¿Quieres tus tickets?</div>
+            <div>
+              <a href="tickets.html"><img class="m-3" height="50" src="img/si.png"></a>
+              <a href="tickets.html"><img class="m-3" height="50" src="img/obvio.png"></a>
             </div>
-        </section>
+          </td>
+        </tr>
+      </table>
     </div>
 
-</body>
+    </div>
+  
 
+    <div style="background-color: #a428ae; height:3px">
+    </div>
+
+    <div class="p-3" style="background-color:white">
+      <img height="100" src="img/logos/logo_alpha.jpg">
+      <img height="100" src="img/logos/logo_anime_island.jpg">
+      <img height="100" src="img/logos/logo_baltri.jpg">
+      <img height="100" src="img/logos/logo_boca.jpg">
+      <img height="100" src="img/logos/logo_brother.jpg">
+      <img height="100" src="img/logos/logo_cacani.jpg">
+      <img height="100" src="img/logos/logo_canita.jpg">
+    </div>
+
+    <div style="background-color: #a428ae; height:20px">
+    </div>
+  
+    
+
+    <!-- Scripts -->
+    <script>
+  
+    // Pretty simple huh?
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene, {
+    relativeInput: false,
+    clipRelativeInput: true
+  });
+  
+    </script>
+
+</body>
 </html>
