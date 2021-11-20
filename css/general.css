@@ -38,10 +38,19 @@
 body {
     font-family: 'AmsiPro';
     font-weight: 900;
-    background-image: url('../img/bg.jpg');
-    background-repeat: repeat-x;
+    background-image: url('../img/bg2.jpg');
+    background-repeat: repeat;
+    position: relative;
+    padding-bottom: 70px;
 }
-
+body:after {
+    content: '';
+    height: 50px;
+    width: 100%;
+    background: #a527af;
+    position: absolute;
+    bottom: 20px;
+}
 .barra-principal {
     background-color: #fea1d0;
 }
@@ -329,4 +338,22 @@ body {
 button.ticket-button-price {
     border: none;
     font-weight: 900;
+}
+table.invitados {
+    width: 100%;
+    max-width: 1200px;
+}
+.carousel img {
+    height: 500px;
+    width: auto;
+    object-fit: contain;
+}
+.index-buy-tickets {
+    margin-left: 150px;
+    width:450px
+}
+@media (min-width: 1500px) {
+    .index-buy-tickets {
+        margin-left: 300px;
+    }
 }
