@@ -44,14 +44,6 @@ body {
     padding-bottom: 70px;
     max-width: 100%;
 }
-body:after {
-    content: '';
-    height: 50px;
-    width: 100%;
-    background: #a527af;
-    position: absolute;
-    bottom: 20px;
-}
 .barra-principal {
     background-color: #fea1d0;
 }
